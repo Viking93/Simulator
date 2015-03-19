@@ -1,0 +1,46 @@
+
+------ Simulation result -----------
+Successful requests: 99
+Failed requests: 1
+Found impossible requests: 0
+Average passenger travel time (on-board) is : 00:29:44
+Max passenger travel time (on-board) is: 01:13:59
+Median passenger travel time (on-board) is: 00:29:14
+Average passenger ride time (on-board) is: 00:17:00
+Max passenger ride time (on-board) is: 00:51:19
+Median passenger ride time (on-board) is: 00:15:23
+Average passenger wait time is: 00:12:43
+Max passenger wait time is: 00:25:08
+Median passenger wait time is: 00:12:48
+Total vehicle distance driven (in kilometers): 735.6256602075597
+Total values of CO2 [gram]: 112638.99636614961
+Total values of CO [gram]: 115993.387953886
+Total values of NOx [gram]: 29905.025990513168
+Total values of PM10 [gram]: 20196.604272810335
+Total values of SOx [gram]: 49709.901035505914
+Total values of fuel [Liter] : 51.13701717872405
+Alg. real time: 00:00:00
+Simulation real time: 00:00:24
+Hour - 0 : avg. passenger per vehicle hour - 1.0
+Hour - 1 : avg. passenger per vehicle hour - 1.0
+Hour - 2 : avg. passenger per vehicle hour - 1.0
+Hour - 3 : avg. passenger per vehicle hour - 1.0
+Hour - 4 : avg. passenger per vehicle hour - 0
+Hour - 5 : avg. passenger per vehicle hour - 1.0
+Hour - 6 : avg. passenger per vehicle hour - 1.0
+Hour - 7 : avg. passenger per vehicle hour - 1.0
+Hour - 8 : avg. passenger per vehicle hour - 1.0
+Hour - 9 : avg. passenger per vehicle hour - 1.0
+Hour - 10 : avg. passenger per vehicle hour - 1.0
+Hour - 11 : avg. passenger per vehicle hour - 1.0
+Hour - 12 : avg. passenger per vehicle hour - 1.0
+Hour - 13 : avg. passenger per vehicle hour - 1.0
+Hour - 14 : avg. passenger per vehicle hour - 1.0
+Hour - 15 : avg. passenger per vehicle hour - 1.0
+Hour - 16 : avg. passenger per vehicle hour - 1.0
+Hour - 17 : avg. passenger per vehicle hour - 1.0
+Hour - 18 : avg. passenger per vehicle hour - 1.0
+Hour - 19 : avg. passenger per vehicle hour - 1.0
+Hour - 20 : avg. passenger per vehicle hour - 1.0
+Hour - 21 : avg. passenger per vehicle hour - 1.0
+Hour - 22 : avg. passenger per vehicle hour - 1.0
