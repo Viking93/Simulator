@@ -57,8 +57,9 @@ public class TestbedModel {
      * Following properties saves the current state of the environment:
      * taxisFree - a list of ids of taxis, which have currently no task assigned
      * taxiDriversFree - a list of ids of free taxis' drivers (the same order as
-     * previous list) taxisAtWork - a list of ids of taxis, which have been
-     * assigned a task passengers - a list of ids of all passengers
+     * previous list) 
+     * taxisAtWork - a list of ids of taxis, which have been assigned a task 
+     * passengers - a list of ids of all passengers
      */
     private List<String> taxisFree;
     private List<String> taxiDriversFree;
@@ -161,7 +162,7 @@ public class TestbedModel {
     }
 
     public List<String> getTaxiDriversBusy() {
-	return taxiDriversBusy;
+    	return taxiDriversBusy;
     }
 
     public List<String> getAllTaxiDrivers() {

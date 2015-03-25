@@ -50,7 +50,7 @@ public class DispatchingLogicExample extends DispatchingLogic {
     public List<String> makeVehicleList(Request request){
     	
     	List<String> nearbyBusList = new ArrayList<String>();
-    	double short_dist = 5.0;
+    	double short_dist = 5000.0;
     	
     	for (String taxiDriverId : taxiModel.getTaxiDriversFree()) {
 		
@@ -60,13 +60,23 @@ public class DispatchingLogicExample extends DispatchingLogic {
                 continue;
             }
             
-            double timeToPassenger = utils.computeDrivingTime(taxiDriverId, request.getPassengerId());
-            double distanceToPassenger = GlobalParams.getVelocityInKmph() * timeToPassenger / 3600;
+            // timeToPassenger in seconds
+            double timeToPassenger = utils.computeDrivingTime(taxiDriverId, request.getPassengerId()) / 1000;
+            // distanceToPassenger in meters
+            double distanceToPassenger = GlobalParams.getVelocityInKmph() * timeToPassenger / 3.6;
+            
+            LOGGER.info("\n	making list : driver => " + taxiDriverId + "	distance => " + distanceToPassenger
+            		+ "	timeto => " + timeToPassenger);
             
             if(distanceToPassenger <= short_dist)
+            {
             	nearbyBusList.add(taxiDriverId);
-            
+            	LOGGER.info("	NearByBus : " + taxiModel.getVehicleId(taxiDriverId) + ",  DistanceToPassenger : " + distanceToPassenger
+            			+ ",  timeToPassenger : " + timeToPassenger);
+            }
     	}
+    	
+    	LOGGER.info("   NearByBusList size : " + nearbyBusList.size() + "\n");
     	
     	return nearbyBusList;
     }
@@ -105,17 +115,22 @@ public class DispatchingLogicExample extends DispatchingLogic {
             for(Request passengerRequest : passengerRequests) {
             	
             	if(passengerRequest.getTimeWindow().getLatestDeparture() >= (long) timeToPassenger + passengerRequest.getPickupTime())
-            		waitingTime+= passengerRequest.getTimeWindow().getLatestDeparture() - (long) timeToPassenger + passengerRequest.getPickupTime();
+            		waitingTime += passengerRequest.getTimeWindow().getLatestDeparture() - (long) timeToPassenger + passengerRequest.getPickupTime();
                 
           	}
             
+            LOGGER.info("	Taxi : " + taxiModel.getVehicleId(taxiDriverId) + ",  waiting time : " + waitingTime
+            		+ ",    total waiting time : " + totalWaitingTime);
+           
             if(totalWaitingTime > waitingTime)
             {
+            	LOGGER.info("	changing taxi : " + taxiModel.getVehicleId(taxiDriverId));
             	taxiId = taxiDriverId;
             	totalWaitingTime = waitingTime;
             }
+            
     	}
-    	    
+    	LOGGER.info("	selected taxi : " + taxiModel.getVehicleId(taxiId));
     	return taxiId;
     }
     
@@ -127,8 +142,8 @@ public class DispatchingLogicExample extends DispatchingLogic {
     	if (taxiModel.getNumOfPassenOnBoard(taxiVehicle.getId()) >= taxiVehicle.getCapacity()) 
     		taxiModel.setTaxiBusy(taxiVehicle.getId());
     }
-    
-   public void processnewRequest(Request request) {
+    @Override
+   public void processNewRequest(Request request) {
 
         // print out the request for debugging purposes
         LOGGER.info("	Request: [" + utils.toHoursAndMinutes(request.getTimeWindow().getEarliestDeparture())
@@ -202,8 +217,6 @@ public class DispatchingLogicExample extends DispatchingLogic {
 
             }
 
-        
-
         sendRequestReject(request.getPassengerId(), request);
         LOGGER.info("	Reply:   REJECT [suitable taxi not found]");
 
@@ -249,11 +262,11 @@ public class DispatchingLogicExample extends DispatchingLogic {
     public void processDriverRejectsNewPlan(DriverNewPlanRejectMessage driverNewPlanRejectMessage) {
         sendFinalPlanFailure(driverNewPlanRejectMessage.tripInfo.getDriverId());
     }
-    @Override
-    public void processNewRequest(Request request) {
+    //@Override
+    public void processnewRequest(Request request) {
 
         // print out the request for debugging purposes
-        LOGGER.info("	Request: [" + utils.toHoursAndMinutes(request.getTimeWindow().getEarliestDeparture())
+        LOGGER.info("==**	Request: [" + utils.toHoursAndMinutes(request.getTimeWindow().getEarliestDeparture())
                 + "] from " + request.getPassengerId() + ", latest departure: "
                 + utils.toHoursAndMinutes(request.getTimeWindow().getLatestDeparture()) + " " + request);
 
