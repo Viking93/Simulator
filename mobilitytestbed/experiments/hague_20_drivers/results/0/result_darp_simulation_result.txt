@@ -1,46 +1,46 @@
 
 ------ Simulation result -----------
-Successful requests: 14
-Failed requests: 4
+Successful requests: 98
+Failed requests: 2
 Found impossible requests: 0
-Average passenger travel time (on-board) is : 00:31:36
-Max passenger travel time (on-board) is: 00:47:29
-Median passenger travel time (on-board) is: 00:29:38
-Average passenger ride time (on-board) is: 00:18:12
-Max passenger ride time (on-board) is: 00:33:11
-Median passenger ride time (on-board) is: 00:19:04
-Average passenger wait time is: 00:13:23
-Max passenger wait time is: 00:19:40
-Median passenger wait time is: 00:13:49
-Total vehicle distance driven (in kilometers): 114.81358348339695
-Total values of CO2 [gram]: 18041.42447056753
-Total values of CO [gram]: 24560.165789919465
-Total values of NOx [gram]: 4292.759741392057
-Total values of PM10 [gram]: 2979.2687216904715
-Total values of SOx [gram]: 8046.758258634167
-Total values of fuel [Liter] : 8.038912326797037
+Average passenger travel time (on-board) is : 00:21:41
+Max passenger travel time (on-board) is: 01:01:28
+Median passenger travel time (on-board) is: 00:19:42
+Average passenger ride time (on-board) is: 00:16:51
+Max passenger ride time (on-board) is: 00:51:19
+Median passenger ride time (on-board) is: 00:15:21
+Average passenger wait time is: 00:04:50
+Max passenger wait time is: 00:16:34
+Median passenger wait time is: 00:03:49
+Total vehicle distance driven (in kilometers): 531.2724506864001
+Total values of CO2 [gram]: 81773.11536157115
+Total values of CO [gram]: 89716.52799880854
+Total values of NOx [gram]: 21252.50266014697
+Total values of PM10 [gram]: 14426.830991418956
+Total values of SOx [gram]: 36166.15942542678
+Total values of fuel [Liter] : 36.9844891235235
 Alg. real time: 00:00:00
-Simulation real time: 00:00:12
-Hour - 0 : avg. passenger per vehicle hour - 0
-Hour - 1 : avg. passenger per vehicle hour - 0
-Hour - 2 : avg. passenger per vehicle hour - 0
-Hour - 3 : avg. passenger per vehicle hour - 0
+Simulation real time: 00:00:21
+Hour - 0 : avg. passenger per vehicle hour - 1.0
+Hour - 1 : avg. passenger per vehicle hour - 1.0
+Hour - 2 : avg. passenger per vehicle hour - 1.0
+Hour - 3 : avg. passenger per vehicle hour - 1.0
 Hour - 4 : avg. passenger per vehicle hour - 0
-Hour - 5 : avg. passenger per vehicle hour - 0
+Hour - 5 : avg. passenger per vehicle hour - 1.0
 Hour - 6 : avg. passenger per vehicle hour - 1.0
 Hour - 7 : avg. passenger per vehicle hour - 1.0
-Hour - 8 : avg. passenger per vehicle hour - 1.0
+Hour - 8 : avg. passenger per vehicle hour - 1.1818181818181819
 Hour - 9 : avg. passenger per vehicle hour - 1.0
-Hour - 10 : avg. passenger per vehicle hour - 0
-Hour - 11 : avg. passenger per vehicle hour - 0
+Hour - 10 : avg. passenger per vehicle hour - 1.0
+Hour - 11 : avg. passenger per vehicle hour - 1.0
 Hour - 12 : avg. passenger per vehicle hour - 1.0
-Hour - 13 : avg. passenger per vehicle hour - 0
+Hour - 13 : avg. passenger per vehicle hour - 1.0
 Hour - 14 : avg. passenger per vehicle hour - 1.0
 Hour - 15 : avg. passenger per vehicle hour - 1.0
-Hour - 16 : avg. passenger per vehicle hour - 0
-Hour - 17 : avg. passenger per vehicle hour - 1.0
-Hour - 18 : avg. passenger per vehicle hour - 1.0
-Hour - 19 : avg. passenger per vehicle hour - 0
-Hour - 20 : avg. passenger per vehicle hour - 1.0
-Hour - 21 : avg. passenger per vehicle hour - 0
+Hour - 16 : avg. passenger per vehicle hour - 1.3333333333333333
+Hour - 17 : avg. passenger per vehicle hour - 1.2222222222222223
+Hour - 18 : avg. passenger per vehicle hour - 1.25
+Hour - 19 : avg. passenger per vehicle hour - 1.0
+Hour - 20 : avg. passenger per vehicle hour - 1.5
+Hour - 21 : avg. passenger per vehicle hour - 1.0
 Hour - 22 : avg. passenger per vehicle hour - 1.0

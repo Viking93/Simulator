@@ -2,6 +2,7 @@ package cz.agents.agentpolis.darptestbed.simmodel.environment.model;
 
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
+import com.sun.istack.logging.Logger;
 
 import cz.agents.agentpolis.darptestbed.simmodel.agent.data.Request;
 import cz.agents.agentpolis.darptestbed.simmodel.agent.timer.Timer;
@@ -56,8 +57,7 @@ public class TestbedModel {
     /**
      * Following properties saves the current state of the environment:
      * taxisFree - a list of ids of taxis, which have currently no task assigned
-     * taxiDriversFree - a list of ids of free taxis' drivers (the same order as
-     * previous list) 
+     * taxiDriversFree - a list of ids of free taxis' drivers (the same order as previous list) 
      * taxisAtWork - a list of ids of taxis, which have been assigned a task 
      * passengers - a list of ids of all passengers
      */
@@ -65,12 +65,13 @@ public class TestbedModel {
     private List<String> taxiDriversFree;
     private List<String> taxisBusy;
     private List<String> taxiDriversBusy;
-    private List<String> passengers;
-    private List<Request> passengerRequests;
+    private List<String> passengers; 
+    private List<Request> passengerReq; 
     /**
      * Map of taxi ids along with their current passengers on board
      */
     protected Map<String, List<String>> taxiWithPassengersOnBoard;
+    protected Map<String, List<Request>> passengerRequests; //* added for mapping taxi id with Requests
     /**
      * Busy taxi driver save their future positions at the end of their trips
      * into this map (<Taxi ID, The number of node = position at the end>)
@@ -88,8 +89,9 @@ public class TestbedModel {
         this.taxisBusy = new ArrayList<String>();
         this.taxiDriversBusy = new ArrayList<String>();
         this.passengers = new ArrayList<String>();
-        this.passengerRequests = new ArrayList<Request>();
+        this.passengerReq = new ArrayList<Request>();
         this.taxiWithPassengersOnBoard = new HashMap<String, List<String>>();
+        this.passengerRequests = new HashMap<String, List<Request>>();
         this.taxiWithEndOfTripPositions = new HashMap<String, Long>();
     }
 
@@ -97,13 +99,15 @@ public class TestbedModel {
         this.dispatching = dispatching;
     }
 
-    public void addPassengerRequest(Request request){
+    /*public void addPassengerRequest(Request request){
     	this.passengerRequests.add(request);
     }
+    
     
     public List<Request> getPassengerRequests(){
     	return this.passengerRequests;
     }
+    */
     public void setTimers(Timer dispatchingTimer, Timer taxiDriversTimer, Timer passengersTimer) {
 
         this.dispatchingTimer = dispatchingTimer;
@@ -162,7 +166,7 @@ public class TestbedModel {
     }
 
     public List<String> getTaxiDriversBusy() {
-    	return taxiDriversBusy;
+	return taxiDriversBusy;
     }
 
     public List<String> getAllTaxiDrivers() {
@@ -272,12 +276,27 @@ public class TestbedModel {
      * @return true, if the passenger was found in the taxi
      */
     public boolean removePassengerOnBoard(String passenId, String vehicleId) {
-        List<String> passenIds = this.taxiWithPassengersOnBoard.get(vehicleId);
+       
+    	/* 	made to remove old reqs*/
+    	List<Request> passenReq = this.passengerRequests.get(vehicleId);
+    	Request req = this.getRequestWithPassengerId(passenId);
+    	
+    	//System.out.println("\n==========>   Removing passenger : " + passenId + "    req : " + req.getPassengerId() + "\n");
+	    passenReq.remove(req);
+	    this.passengerRequests.put(vehicleId, passenReq); // not needed! working with references
+    	/*for(Request r : this.passengerRequests.get(vehicleId))
+    	{
+    		System.out.println("\n==========>  vehicle : " + vehicleId + " passenger : " + r.getPassengerId() + "\n");
+    	}*/
+    	
+    	List<String> passenIds = this.taxiWithPassengersOnBoard.get(vehicleId);
         if (passenIds == null) {
             return false;
         }
         boolean ret = passenIds.remove(passenId);
         this.taxiWithPassengersOnBoard.put(vehicleId, passenIds); // not needed! working with references
+        
+        
         return ret;
     }
 
@@ -300,12 +319,26 @@ public class TestbedModel {
     	return this.taxiWithPassengersOnBoard.get(vehicleId);
     }
 
+    public List<Request> getPassengerRequests(String vehicleId) {
+    	return this.passengerRequests.get(vehicleId);
+    	
+    }
+    
+   /* public void addPassengerRequest(Request request,String vehicleId) {
+        List<Request> passenReq = this.passengerRequests.get(vehicleId);
+        if (passenReq == null) {
+            passenReq = new ArrayList<Request>();
+        }
+        passenReq.add(request);
+        this.passengerRequests.put(vehicleId, passenReq);
+    }*/
+    
     /**
      * Save the position at the end of my trip (usually used by busy taxi
      * drivers, that are currently on the way)
      *
      * @param vehicleId    the id of the taxi
-     * @param endOfTripPos the number of node - position at the end of taxi's trip
+     * @param endOfTripPos the number of node - tposition at the end of taxi's trip
      */
     public void setEndOfTripPosition(String vehicleId, Long endOfTripPos) {
         this.taxiWithEndOfTripPositions.put(vehicleId, endOfTripPos);
@@ -397,6 +430,29 @@ public class TestbedModel {
 
         return sb.toString();
     }
+    
+    ///////////////
+	public void addPassengerRequest(Request request, String vehicleId) {
+		// TODO Auto-generated method stub
+		
+		List<Request> passenReq = this.passengerRequests.get(vehicleId);
+        if (passenReq == null) {
+            passenReq = new ArrayList<Request>();
+        }
+        passenReq.add(request);
+        this.passengerRequests.put(vehicleId, passenReq);
+        this.passengerReq.add(request);
+	}
 
 	
+    public Request getRequestWithPassengerId(String passengerId)
+    {
+    	for(Request req : passengerReq)
+    	{
+    		if(passengerId == req.getPassengerId())
+    			return req;
+    	}
+    	
+		return null;
+    }
 }

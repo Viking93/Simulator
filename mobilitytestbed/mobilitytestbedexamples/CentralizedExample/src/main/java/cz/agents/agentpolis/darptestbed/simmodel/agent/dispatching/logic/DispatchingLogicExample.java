@@ -44,7 +44,7 @@ public class DispatchingLogicExample extends DispatchingLogic {
         super(agentId, sender, driverCentralizedMessageProtocol, generalMessageProtocol, taxiModel, positionQuery,
                 allNetworkNodes, utils,
                 pathPlanner, vehicleStorage);
-
+        
     }
 
     public List<String> makeVehicleList(Request request){
@@ -55,7 +55,7 @@ public class DispatchingLogicExample extends DispatchingLogic {
     	for (String taxiDriverId : taxiModel.getTaxiDriversFree()) {
 		
     		TestbedVehicle taxiVehicle = vehicleStorage.getEntityById(taxiModel.getVehicleId(taxiDriverId));
-            
+    		
             if (taxiModel.getNumOfPassenOnBoard(taxiModel.getVehicleId(taxiDriverId)) >= taxiVehicle.getCapacity()) {
                 continue;
             }
@@ -65,18 +65,18 @@ public class DispatchingLogicExample extends DispatchingLogic {
             // distanceToPassenger in meters
             double distanceToPassenger = GlobalParams.getVelocityInKmph() * timeToPassenger / 3.6;
             
-            LOGGER.info("\n	making list : driver => " + taxiDriverId + "	distance => " + distanceToPassenger
-            		+ "	timeto => " + timeToPassenger);
+            //LOGGER.info("\n	making list : driver => " + taxiDriverId + "	distance => " + distanceToPassenger
+            //		+ "	timeto => " + timeToPassenger);
             
             if(distanceToPassenger <= short_dist)
             {
             	nearbyBusList.add(taxiDriverId);
-            	LOGGER.info("	NearByBus : " + taxiModel.getVehicleId(taxiDriverId) + ",  DistanceToPassenger : " + distanceToPassenger
-            			+ ",  timeToPassenger : " + timeToPassenger);
+            	//LOGGER.info("	NearByBus : " + taxiModel.getVehicleId(taxiDriverId) + ",  DistanceToPassenger : " + distanceToPassenger
+            	//		+ ",  timeToPassenger : " + timeToPassenger);
             }
     	}
     	
-    	LOGGER.info("   NearByBusList size : " + nearbyBusList.size() + "\n");
+    	//LOGGER.info("   NearByBusList size : " + nearbyBusList.size() + "\n");
     	
     	return nearbyBusList;
     }
@@ -91,7 +91,7 @@ public class DispatchingLogicExample extends DispatchingLogic {
     		
     	List<String> nearbyBusList = makeVehicleList(request);
     	String taxiId = null;
-    	long totalWaitingTime = 999999999;
+    	double totalWaitingTime = 999999999;
     	
     	for (String taxiDriverId : nearbyBusList) {
 
@@ -106,45 +106,97 @@ public class DispatchingLogicExample extends DispatchingLogic {
          
             // compute the driving time between the passenger and the driver
             double timeToPassenger = utils.computeDrivingTime(taxiDriverId, request.getPassengerId());
-         //   long pickUpTime = utils.getCurrentTime() + (long) timeToPassenger;
-           
-            List<Request> passengerRequests = taxiModel.getPassengerRequests();
+            // long pickUpTime = utils.getCurrentTime() + (long) timeToPassenger;
+            //LOGGER.info("   ===>> PassengerOnBoard : " + taxiModel.getNumOfPassenOnBoard(taxiModel.getVehicleId(taxiDriverId)));
+            List<Request> passengerRequests = taxiModel.getPassengerRequests(taxiModel.getVehicleId(taxiDriverId));
+            //List<String> passengers = taxiModel.getPassengers(taxiModel.getVehicleId(taxiDriverId));
             
-            long waitingTime = 0;
+            double waitingTime = timeToPassenger;
+            //double waitingTime = 0;
             
-            for(Request passengerRequest : passengerRequests) {
+            if(passengerRequests != null)
+            {
+            	//LOGGER.info("   PassReqSize : " + passengerRequests.size());
+            	for(Request req : passengerRequests) {
+                	//LOGGER.info("	Passenger : " + req.getPassengerId());
+            		
+                	if(req.getTimeWindow().getLatestDeparture() >= waitingTime + req.getPickupTime())
+                		waitingTime += req.getPickupTime();
+                	//waitingTime += passengerRequests.contains(passenger);
+                	//.getPickupTime();
+              	}
+            }
+            /*
+            if(passengerRequests != null)
+            {
+            	//LOGGER.info("   PassReqSize : " + passengerRequests.size());
+            	Request req = passengerRequests.get(passengerRequests.size());
+            	double pickUpTime = 0;
             	
-            	if(passengerRequest.getTimeWindow().getLatestDeparture() >= (long) timeToPassenger + passengerRequest.getPickupTime())
-            		waitingTime += passengerRequest.getTimeWindow().getLatestDeparture() - (long) timeToPassenger + passengerRequest.getPickupTime();
-                
-          	}
+            	if(req == null)
+            		pickUpTime = utils.computeDrivingTime(taxiDriverId, request.getPassengerId());
+            	else
+            	{
+            		pickUpTime = utils.computeDrivingTime(req.getPassengerId(), request.getPassengerId());
+            		pickUpTime += req.getPickupTime();
+            	}
+            	
+            	if(request.getTimeWindow().getLatestDeparture() < pickUpTime)
+            	{
+                		continue;
+              	}
+            	else
+            	{
+            		if(totalWaitingTime > pickUpTime)
+            		taxiId = taxiDriverId;
+                	totalWaitingTime = pickUpTime;
+            	}
+            }*/
+            else
+            {
+            	//LOGGER.info("   PassReqSize : 0 ");
+            }
             
-            LOGGER.info("	Taxi : " + taxiModel.getVehicleId(taxiDriverId) + ",  waiting time : " + waitingTime
-            		+ ",    total waiting time : " + totalWaitingTime);
-           
+            
+            
+            
+            //LOGGER.info("	Taxi : " + taxiModel.getVehicleId(taxiDriverId) + ",  waiting time : " + waitingTime
+            //		+ ",    total waiting time : " + totalWaitingTime + "\n");
+            /*
+            if(passengerRequests.size() == 0)
+            {
+            	if(totalWaitingTime > timeToPassenger)
+                {
+                	LOGGER.info("	changing taxi : " + taxiModel.getVehicleId(taxiDriverId));
+                	taxiId = taxiDriverId;
+                	totalWaitingTime = timeToPassenger;
+                }
+            }
+            else*/ 
             if(totalWaitingTime > waitingTime)
             {
-            	LOGGER.info("	changing taxi : " + taxiModel.getVehicleId(taxiDriverId));
+            	//LOGGER.info("	changing taxi : " + taxiModel.getVehicleId(taxiDriverId));
             	taxiId = taxiDriverId;
             	totalWaitingTime = waitingTime;
             }
             
     	}
-    	LOGGER.info("	selected taxi : " + taxiModel.getVehicleId(taxiId));
+    	LOGGER.info("	selected taxi : " + taxiModel.getVehicleId(taxiId) + "\n");
     	return taxiId;
     }
     
     public void increaseOnBoardPassenger(TestbedVehicle taxiVehicle,Request request){
     	
-    	taxiModel.addPassengerOnBoard(request.getPassengerId(),taxiVehicle.getId());
-    	taxiModel.addPassengerRequest(request);
+    	taxiModel.addPassengerOnBoard(request.getPassengerId(), taxiVehicle.getId());
+    	taxiModel.addPassengerRequest(request, taxiVehicle.getId());
     	
     	if (taxiModel.getNumOfPassenOnBoard(taxiVehicle.getId()) >= taxiVehicle.getCapacity()) 
     		taxiModel.setTaxiBusy(taxiVehicle.getId());
     }
     @Override
    public void processNewRequest(Request request) {
-
+    	
+    	
         // print out the request for debugging purposes
         LOGGER.info("	Request: [" + utils.toHoursAndMinutes(request.getTimeWindow().getEarliestDeparture())
                 + "] from " + request.getPassengerId() + ", latest departure: "
