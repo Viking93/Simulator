@@ -100,6 +100,7 @@ public abstract class PassengerAgent<TPassengerLogic extends PassengerLogic> ext
 
 	@Override
 	public void visit(DriverArrivedMessage driverArrivedMessage) {
+		System.out.println("===::## Passenger Visit : ");
 		logic.processVehicleArrived(driverArrivedMessage.driverId, driverArrivedMessage.confirmation.getVehicleId());
 		LOGGER.debug(getId() + ":" + driverArrivedMessage.getClass().getSimpleName());
 

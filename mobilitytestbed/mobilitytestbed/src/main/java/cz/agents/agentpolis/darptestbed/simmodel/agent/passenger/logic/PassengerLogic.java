@@ -18,7 +18,10 @@ import cz.agents.agentpolis.ondemandtransport.siminfrastructure.communication.pr
 import cz.agents.agentpolis.simmodel.agent.activity.TimeSpendingActivity;
 import cz.agents.agentpolis.simmodel.agent.activity.callback.TimeActivityCallback;
 import cz.agents.agentpolis.simmodel.environment.model.query.AgentPositionQuery;
+
 import org.apache.log4j.Logger;
+
+import com.sun.xml.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
 
 import java.util.Set;
 
@@ -141,6 +144,10 @@ public abstract class PassengerLogic<TMessageProtocol extends AMessageProtocol<?
      */
     public void processVehicleArrived(String driverId, String vehicleId) {
         // check out, if the arrived taxi is the one we've been waiting for
+    	//Array a = null;
+    	//a.toString();
+    	LOGGER.info("TAXI arrived at passenger's location " +  getAgentId() + "\n");
+    	
         if (vehicleId.equals(currentVehicleId) && driverId.equals(currentDriverId)) {
 
             if (this.currentRequestConfirmed.getFromNode() == this.getCurrentPositionNode()) {
@@ -150,7 +157,7 @@ public abstract class PassengerLogic<TMessageProtocol extends AMessageProtocol<?
                 } else {
                     processVehicleArrivedNoTimeWindows(driverId, vehicleId);
                 }
-//                LOGGER.debug("ON BOARD: " + vehicleId + " " + taxiModel.getNumOfPassenOnBoard(vehicleId) + " " + getAgentId());
+                // LOGGER.debug("ON BOARD: " + vehicleId + " " + taxiModel.getNumOfPassenOnBoard(vehicleId) + " " + getAgentId());
 
                 if (result) {
                     if (!driverId.equals(currentDriverId)) {
@@ -162,6 +169,10 @@ public abstract class PassengerLogic<TMessageProtocol extends AMessageProtocol<?
                                 "NULL") + " " + this.getCurrentPositionNode());
                     } else {
                         LOGGER.debug("PASSENGER BOARDS TAXI: " + getAgentId() + " curr: " + currentDriverId + " " +
+                                currentVehicleId + " " + ((this.currentRequestConfirmed != null) ? this
+                                .currentRequestConfirmed
+                                .getFromNode() : "NULL") + " " + this.getCurrentPositionNode());
+                        LOGGER.info("PASSENGER BOARDS TAXI: " + getAgentId() + " curr: " + currentDriverId + " " +
                                 currentVehicleId + " " + ((this.currentRequestConfirmed != null) ? this
                                 .currentRequestConfirmed
                                 .getFromNode() : "NULL") + " " + this.getCurrentPositionNode());
@@ -206,6 +217,7 @@ public abstract class PassengerLogic<TMessageProtocol extends AMessageProtocol<?
     public void acceptTripInfo(TripInfo tripInfo, Set<String> passengerAdditionalRequirements) {
 //        if (tripInfo.getDriverId().equals("DriverId19"))
         LOGGER.debug("PASSENGER RECEIVED TRIP INFO: " + getAgentId() + " " + tripInfo);
+        LOGGER.info("PASSENGER RECEIVED TRIP INFO: " + getAgentId() + " " + tripInfo);
         startWaiting(tripInfo.getDriverId(), tripInfo.getVehicleId(), passengerAdditionalRequirements);
     }
 
@@ -239,7 +251,9 @@ public abstract class PassengerLogic<TMessageProtocol extends AMessageProtocol<?
                 "The incoming vehicle with id " + vehicleId + ", doesn't satisfy passenger's requirements");
 
         long delay = this.currentRequestConfirmed.getTimeWindow().getDepartureDelay(utils.getCurrentTime());
-
+        
+        LOGGER.info(" Passenger : " + getAgentId() + "  vehicle : " + vehicleId + " arrived");
+        
         if (delay < 0) {
             // the taxi has arrived too early
             LOGGER.debug(driverId + " arrived too soon for " + getAgentId() + " (at " + getCurrentTimeStr() + ")" +
@@ -285,7 +299,7 @@ public abstract class PassengerLogic<TMessageProtocol extends AMessageProtocol<?
      * @param vehicleId the vehicle he got into
      */
     protected void sendPassengerGotOffVehicle(String driverId, String vehicleId) {
-
+    	LOGGER.info("Passenger" + getAgentId() + " got out of " + vehicleId);
         driverMessageProtocol.sendMessage(driverId, new PassengerIsOffTaxiMessage(getAgentId(), new TripInfo(driverId,
                 vehicleId)));
 

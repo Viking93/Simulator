@@ -56,6 +56,7 @@ public class DispatchingLogicExample extends DispatchingLogic {
 		
     		TestbedVehicle taxiVehicle = vehicleStorage.getEntityById(taxiModel.getVehicleId(taxiDriverId));
     		
+    		
             if (taxiModel.getNumOfPassenOnBoard(taxiModel.getVehicleId(taxiDriverId)) >= taxiVehicle.getCapacity()) {
                 continue;
             }
@@ -65,14 +66,14 @@ public class DispatchingLogicExample extends DispatchingLogic {
             // distanceToPassenger in meters
             double distanceToPassenger = GlobalParams.getVelocityInKmph() * timeToPassenger / 3.6;
             
-            //LOGGER.info("\n	making list : driver => " + taxiDriverId + "	distance => " + distanceToPassenger
-            //		+ "	timeto => " + timeToPassenger);
+            LOGGER.info("\n	making list : driver => " + taxiDriverId + "	distance => " + distanceToPassenger
+            		+ "	timeto => " + timeToPassenger);
             
             if(distanceToPassenger <= short_dist)
             {
             	nearbyBusList.add(taxiDriverId);
-            	//LOGGER.info("	NearByBus : " + taxiModel.getVehicleId(taxiDriverId) + ",  DistanceToPassenger : " + distanceToPassenger
-            	//		+ ",  timeToPassenger : " + timeToPassenger);
+            	LOGGER.info("	NearByBus : " + taxiModel.getVehicleId(taxiDriverId) + ",  DistanceToPassenger : " + distanceToPassenger
+            			+ ",  timeToPassenger : " + timeToPassenger);
             }
     	}
     	
@@ -190,12 +191,22 @@ public class DispatchingLogicExample extends DispatchingLogic {
     	taxiModel.addPassengerOnBoard(request.getPassengerId(), taxiVehicle.getId());
     	taxiModel.addPassengerRequest(request, taxiVehicle.getId());
     	
+    	LOGGER.info("Num of Pass on Board : " + taxiModel.getNumOfPassenOnBoard(taxiVehicle.getId()) 
+    			+ "  Taxi Capacity : " + taxiVehicle.getCapacity());
+    	
     	if (taxiModel.getNumOfPassenOnBoard(taxiVehicle.getId()) >= taxiVehicle.getCapacity()) 
+    	{
+    		System.out.println(" << yep!! it did it\n");
     		taxiModel.setTaxiBusy(taxiVehicle.getId());
+    	}
     }
     @Override
    public void processNewRequest(Request request) {
-    	
+    	TripPlan tripPlan = null;
+    	Trip toPassenger = null;
+    	Trip toDestination = null;
+    	Trips drivePath = null;
+    	Map<Long, PassengersInAndOutPair> pickUpAndDropOffMap = null;
     	
         // print out the request for debugging purposes
         LOGGER.info("	Request: [" + utils.toHoursAndMinutes(request.getTimeWindow().getEarliestDeparture())
@@ -203,11 +214,11 @@ public class DispatchingLogicExample extends DispatchingLogic {
                 + utils.toHoursAndMinutes(request.getTimeWindow().getLatestDeparture()) + " " + request);
 
         // check if there are any free taxi drivers
-        if (taxiModel.getTaxiDriversFree().size() == 0) {
+        if (taxiModel.getTaxisFree().size() == 0) {
             // if there are no free drivers, dispatcher needs to reject the
             // request
             this.sendRequestReject(request.getPassengerId(), request);
-            LOGGER.info("	Reply:   REJECT [no free taxis]");
+            LOGGER.info("	Reply*:   REJECT [no free taxis]");
             return;
         }
 
@@ -221,53 +232,122 @@ public class DispatchingLogicExample extends DispatchingLogic {
         	request.addPickupTime(pickUpTime);
         	
         	TestbedVehicle taxiVehicle = vehicleStorage.getEntityById(taxiModel.getVehicleId(taxiDriverId));
-        
-                Trip toPassenger = utils.planTrip(taxiVehicle.getId(),
+        	
+        	/////
+        	tripPlan = taxiVehicle.getVehicleTrip();
+        	if(tripPlan == null)
+        	{
+        		toPassenger = utils.planTrip(taxiVehicle.getId(),
                        positionQuery.getCurrentPositionByNodeId(taxiDriverId), request.getFromNode());
-                Trip toDestination = utils.planTrip(taxiVehicle.getId(), request.getFromNode(), request.getToNode());
-
+                toDestination = utils.planTrip(taxiVehicle.getId(), request.getFromNode(), request.getToNode());
+                
                 // concatenate those two trips into a drivePath for the driver
-                Trips drivePath = new Trips();
+                drivePath = new Trips();
                 if (toPassenger != null && toPassenger.numOfCurrentTripItems() > 0)
                     drivePath.addTrip(toPassenger);
                 if (toDestination != null && toDestination.numOfCurrentTripItems() > 0)
                     drivePath.addTrip(toDestination);
-
+                
                 // if we didn't successfully find and concatenate two required
                 // trips, skip this driver
-              //  if (drivePath.numTrips() != 2)
-                 //   continue;
-
+             	// if (drivePath.numTrips() != 2)
+                // continue;
                 // create a pickup map for this path (tells driver where he
                 // should pick up which passengers)
-                Map<Long, PassengersInAndOutPair> pickUpAndDropOffMap = Maps.newHashMap();
+                pickUpAndDropOffMap = Maps.newHashMap();
                 pickUpAndDropOffMap.put(request.getFromNode(),
                         new PassengersInAndOutPair(new HashSet<>(Arrays.asList(request.getPassengerId())),
-                                new HashSet<String>()));
+                        new HashSet<String>()));
                 pickUpAndDropOffMap.put(request.getToNode(),
                         new PassengersInAndOutPair(new HashSet<String>(),
-                                new HashSet<>(Arrays.asList(request.getPassengerId()))));
-
+                        new HashSet<>(Arrays.asList(request.getPassengerId()))));
+             
                 // send the driver on this path
-                TripPlan tripPlan = new TripPlan(drivePath, pickUpAndDropOffMap);
+                tripPlan = new TripPlan(drivePath, pickUpAndDropOffMap);
+                taxiVehicle.setTripPlan(tripPlan);
+                LOGGER.info("	first trip plan : " + tripPlan.toString() + "   Taxi Location : "
+                		+ positionQuery.getCurrentPositionByNodeId(taxiDriverId)
+                		+ "   From : " + request.getFromNode() + "   to : " + request.getToNode());
+        	}
+        	else
+        	{
+        		tripPlan.addRequestToBoardingAndDisembarkingPassengers(request);
+        		Trips trips = tripPlan.getTrips();
+        		
+        		int size = trips.numTrips();
+        		
+        		drivePath = new Trips();
+        		Trip trip = null;
+        		LOGGER.info("   trip size : " + size);
+        		int i = 0;
+        		for(Trip temp : trips)
+        		{
+        			trip = temp;
+        			/*for(int j = 0; j < temp.numOfCurrentTripItems(); j++)
+        			{
+        				System.out.println(" >>>" + temp.showCurrentTripItem());
+        			}*/
+        			
+        			if(i < size / 2)
+        			{
+        				drivePath.addTrip(temp);
+        				LOGGER.info("	1 temp trip info : " + temp.toString());
+        			}
+        			else if(i == size / 2)
+        			{
+        				LOGGER.info("	2 temp trip info : from -> " + temp.showCurrentTripItem().tripPositionByNodeId
+        						+ "   to -> " + request.getFromNode());
+						toPassenger = utils.planTrip(taxiVehicle.getId(),
+								temp.showCurrentTripItem().tripPositionByNodeId, request.getFromNode());
+						
+						toDestination = utils.planTrip(taxiVehicle.getId(), request.getFromNode(), temp.showLastTripItem().tripPositionByNodeId);
+						    
+						LOGGER.info("	3 temp trip info : from -> " + request.getFromNode()
+        						+ "   to -> " + temp.showLastTripItem());
+						if (toPassenger != null && toPassenger.numOfCurrentTripItems() > 0)
+						    drivePath.addTrip(toPassenger);
+						if (toDestination != null && toDestination.numOfCurrentTripItems() > 0)
+						    drivePath.addTrip(toDestination);
+        			}
+        			else
+        			{
+        				drivePath.addTrip(temp);
+        				LOGGER.info("	4 temp trip info : from -> " + temp);
+        			}
+        			i++;
+        		}
+        		
+        		LOGGER.info("	5 temp trip info : from -> " + trip.showLastTripItem()
+						+ "   to -> " + request.getToNode());
+        		toDestination = utils.planTrip(taxiVehicle.getId(), trip.showLastTripItem().tripPositionByNodeId,
+						request.getToNode());
+        		
+        		if (toDestination != null && toDestination.numOfCurrentTripItems() > 0)
+				    drivePath.addTrip(toDestination);		
+        		
+        		tripPlan.setTrips(drivePath);
+        	}
+        	
+        	LOGGER.info("	Pickup And Dropoff : " + tripPlan.getNodeWithBoardingAndDisembarkingPassengers(request.getFromNode()));
+        	////
+        	
+            // confirm the request and tell the passenger which car will
+            // pick him/her up
+            sendMessageDispatcherSendsOutTaxi(taxiDriverId, tripPlan);
+            sendMessageDispatcherAcceptsRequest(request, new TripInfo(taxiDriverId, taxiVehicle.getId()));
 
-                // confirm the request and tell the passenger which car will
-                // pick him/her up
-                sendMessageDispatcherSendsOutTaxi(taxiDriverId, tripPlan);
-                sendMessageDispatcherAcceptsRequest(request, new TripInfo(taxiDriverId, taxiVehicle.getId()));
+            // flag this driver as "busy" if on adding current passenger onBoardPassenger is greater than vehicle capacity
+            increaseOnBoardPassenger(taxiVehicle, request);
+            
+            // print some debug information
+            LOGGER.info("	Reply:   ACCEPT [sending " + taxiVehicle.getId() + "]");
+            LOGGER.info("	Trips:\n\n" + tripPlan.toString());
 
-                // flag this driver as "busy" if on adding current passenger onBoardPassenger is greater than vehicle capacity
-                increaseOnBoardPassenger(taxiVehicle, request);
-                
-                // print some debug information
-                LOGGER.info("	Reply:   ACCEPT [sending " + taxiVehicle.getId() + "]");
-                LOGGER.info("	Trips:\n\n" + tripPlan.getTrips().toString());
+            // once we've sent the driver out, we can finish the execution
+            // of this function
+            return;
 
-                // once we've sent the driver out, we can finish the execution
-                // of this function
-                return;
-
-            }
+        }
 
         sendRequestReject(request.getPassengerId(), request);
         LOGGER.info("	Reply:   REJECT [suitable taxi not found]");
@@ -392,7 +472,7 @@ public class DispatchingLogicExample extends DispatchingLogic {
 
                 // print some debug information
                 LOGGER.info("	Reply:   ACCEPT [sending " + taxiVehicle.getId() + "]");
-                LOGGER.info("	Trips:\n\n" + tripPlan.getTrips().toString());
+                LOGGER.info("	Trips:\n\n" + tripPlan.toString());
 
                 // once we've sent the driver out, we can finish the execution
                 // of this function

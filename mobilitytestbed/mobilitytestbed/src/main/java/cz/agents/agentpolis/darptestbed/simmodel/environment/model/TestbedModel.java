@@ -9,6 +9,7 @@ import cz.agents.agentpolis.darptestbed.simmodel.agent.timer.Timer;
 import cz.agents.agentpolis.darptestbed.simmodel.entity.vehicle.TestbedVehicle;
 import cz.agents.agentpolis.simmodel.agent.Agent;
 import cz.agents.agentpolis.simmodel.environment.model.query.AgentPositionQuery;
+import groovy.util.logging.Log;
 
 import java.util.*;
 
@@ -166,7 +167,7 @@ public class TestbedModel {
     }
 
     public List<String> getTaxiDriversBusy() {
-	return taxiDriversBusy;
+    	return taxiDriversBusy;
     }
 
     public List<String> getAllTaxiDrivers() {
@@ -182,6 +183,9 @@ public class TestbedModel {
      * @param taxiIndex the index of the taxi in the list
      */
     public void setTaxiBusy(int taxiIndex) {
+    	//String a = null;
+    	//a.charAt(8);
+    	System.out.println("\nSetting taxi busy : ");
         this.taxisBusy.add(this.taxisFree.remove(taxiIndex));
         this.taxiDriversBusy.add(this.taxiDriversFree.remove(taxiIndex));
     }
@@ -194,8 +198,12 @@ public class TestbedModel {
      */
     public void setTaxiBusy(String taxiId) {
         if (this.taxisFree.contains(taxiId)) {
-            int taxiIndex = this.taxisFree.lastIndexOf(taxiId);
-            setTaxiBusy(taxiIndex);
+        	
+        	if(getNumOfPassenOnBoard(taxiId) >= vehicleStorage.getEntityById(taxiId).getCapacity())
+        	{
+        		int taxiIndex = this.taxisFree.lastIndexOf(taxiId);
+            	setTaxiBusy(taxiIndex);
+        	}
         }
     }
 
@@ -277,6 +285,8 @@ public class TestbedModel {
      */
     public boolean removePassengerOnBoard(String passenId, String vehicleId) {
        
+    	System.out.println("\n======>>> Vehicle : " + vehicleId + "    remainging Passen : " + this.taxiWithPassengersOnBoard + "\n");
+    	
     	/* 	made to remove old reqs*/
     	List<Request> passenReq = this.passengerRequests.get(vehicleId);
     	Request req = this.getRequestWithPassengerId(passenId);
@@ -296,6 +306,8 @@ public class TestbedModel {
         boolean ret = passenIds.remove(passenId);
         this.taxiWithPassengersOnBoard.put(vehicleId, passenIds); // not needed! working with references
         
+        System.out.println("\n======>>> Vehicle : " + vehicleId + "    Removing : " + passenId + "\n");
+        System.out.println("\n======>>> Vehicle : " + vehicleId + "    remainging Passen : " + this.taxiWithPassengersOnBoard + "\n");
         
         return ret;
     }

@@ -15,7 +15,7 @@ import cz.agents.agentpolis.simmodel.environment.model.citymodel.transportnetwor
 public class TestbedVehicle extends Vehicle {
 
 	private final Set<String> vehicleEquipments;
-	private final TripPlan vehicleTrip;
+	private TripPlan vehicleTripPlan;
 
 	public TestbedVehicle(String vehicleId, EntityType type, double lengthInMeters, int vehiclePassengerCapacity,
 			GraphType usingGraphTypeForMoving, Set<String> vehicleEquipments) {
@@ -23,7 +23,7 @@ public class TestbedVehicle extends Vehicle {
 		super(vehicleId, type, lengthInMeters, vehiclePassengerCapacity, usingGraphTypeForMoving);
 
 		this.vehicleEquipments = vehicleEquipments;
-		this.vehicleTrip = null;
+		this.vehicleTripPlan = null;
 	}
 
 	public Set<String> getVehicleEquipments() {
@@ -31,7 +31,11 @@ public class TestbedVehicle extends Vehicle {
 	}
 
 	public TripPlan getVehicleTrip() {
-		return vehicleTrip;
+		return vehicleTripPlan;
 	}
-
+	
+	public void setTripPlan(TripPlan vehicleTripPlan)
+	{
+		this.vehicleTripPlan = vehicleTripPlan;
+	}
 }

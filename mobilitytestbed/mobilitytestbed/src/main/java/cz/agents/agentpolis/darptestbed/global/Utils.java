@@ -916,7 +916,11 @@ public class Utils {
      */
     public Trip planTrip(String vehicleId, Long originNodeId, Long destinationNodeId) {
         try {
-            return pathPlanner.findTrip(vehicleId, originNodeId, destinationNodeId).getAndRemoveFirstTrip();
+        	Trips trips = pathPlanner.findTrip(vehicleId, originNodeId, destinationNodeId);
+        	if(trips == null)
+        		return null;
+        	
+            return trips.getAndRemoveFirstTrip();
         } catch (TripPlannerException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
