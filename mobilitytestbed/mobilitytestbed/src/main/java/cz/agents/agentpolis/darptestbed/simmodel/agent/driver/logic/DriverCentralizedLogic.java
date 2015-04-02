@@ -1,6 +1,7 @@
 package cz.agents.agentpolis.darptestbed.simmodel.agent.driver.logic;
 
 import com.google.common.collect.Sets;
+
 import cz.agents.agentpolis.darptestbed.global.Utils;
 import cz.agents.agentpolis.darptestbed.siminfrastructure.communication.dispatching.protocol.DispatchingMessageProtocol;
 import cz.agents.agentpolis.darptestbed.siminfrastructure.communication.driver.message.*;
@@ -13,8 +14,10 @@ import cz.agents.agentpolis.darptestbed.simmodel.agent.data.generator.Passengers
 import cz.agents.agentpolis.darptestbed.simmodel.entity.vehicle.TestbedVehicle;
 import cz.agents.agentpolis.darptestbed.simmodel.environment.model.TestbedModel;
 import cz.agents.agentpolis.simmodel.agent.activity.movement.DriveVehicleActivity;
+import cz.agents.agentpolis.simmodel.environment.model.VehicleStorage;
 import cz.agents.agentpolis.simmodel.environment.model.citymodel.transportnetwork.AllNetworkNodes;
 import cz.agents.agentpolis.simmodel.environment.model.query.AgentPositionQuery;
+
 import org.apache.log4j.Logger;
 
 /**
@@ -123,7 +126,7 @@ public class DriverCentralizedLogic extends DriverLogicWithPassengerMessageProto
 
                 break;
             case WAITING_FOR_PASSENGERS:
-
+            	
                 oldIsEverybodyOnBoard = isEverybodyOnBoard();
                 oldIsEverybodyOffBoard = isEverybodyOffBoard();
 

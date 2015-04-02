@@ -121,7 +121,6 @@ public abstract class DriverLogic<TMessageProtocol extends AMessageProtocol<? ex
     protected void setTripPlan(TripPlan newTripPlan) {
         this.tripPlan = newTripPlan;
 
-
         if (lastLoadingNode != -1) {
 
             if (lastLoadingNode == getCurrentPositionNode()) {

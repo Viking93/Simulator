@@ -158,9 +158,6 @@ public class DispatchingLogicExample extends DispatchingLogic {
             	//LOGGER.info("   PassReqSize : 0 ");
             }
             
-            
-            
-            
             //LOGGER.info("	Taxi : " + taxiModel.getVehicleId(taxiDriverId) + ",  waiting time : " + waitingTime
             //		+ ",    total waiting time : " + totalWaitingTime + "\n");
             /*
@@ -232,7 +229,7 @@ public class DispatchingLogicExample extends DispatchingLogic {
         	request.addPickupTime(pickUpTime);
         	
         	TestbedVehicle taxiVehicle = vehicleStorage.getEntityById(taxiModel.getVehicleId(taxiDriverId));
-        	
+
         	/////
         	tripPlan = taxiVehicle.getVehicleTrip();
         	if(tripPlan == null)
@@ -271,7 +268,6 @@ public class DispatchingLogicExample extends DispatchingLogic {
         	}
         	else
         	{
-        		tripPlan.addRequestToBoardingAndDisembarkingPassengers(request);
         		Trips trips = tripPlan.getTrips();
         		
         		int size = trips.numTrips();
@@ -287,16 +283,27 @@ public class DispatchingLogicExample extends DispatchingLogic {
         			{
         				System.out.println(" >>>" + temp.showCurrentTripItem());
         			}*/
-        			
-        			if(i < size / 2)
+        			if(i == 0)
+        			{
+        				toPassenger = utils.planTrip(taxiVehicle.getId(),
+        						positionQuery.getCurrentPositionByNodeId(taxiDriverId),
+        						temp.showLastTripItem().tripPositionByNodeId);
+        				
+        				if (toPassenger != null && toPassenger.numOfCurrentTripItems() > 0)
+						    drivePath.addTrip(toPassenger);
+        				
+        				LOGGER.info("	0 temp trip info : taxi to " + temp.showCurrentTripItem());
+        			}
+        			else if(i < size / 2)
         			{
         				drivePath.addTrip(temp);
-        				LOGGER.info("	1 temp trip info : " + temp.toString());
+        				LOGGER.info("	1 temp trip info : " + temp.showCurrentTripItem() + "  to  " + temp.showLastTripItem());
         			}
         			else if(i == size / 2)
         			{
         				LOGGER.info("	2 temp trip info : from -> " + temp.showCurrentTripItem().tripPositionByNodeId
         						+ "   to -> " + request.getFromNode());
+        				
 						toPassenger = utils.planTrip(taxiVehicle.getId(),
 								temp.showCurrentTripItem().tripPositionByNodeId, request.getFromNode());
 						
@@ -304,8 +311,11 @@ public class DispatchingLogicExample extends DispatchingLogic {
 						    
 						LOGGER.info("	3 temp trip info : from -> " + request.getFromNode()
         						+ "   to -> " + temp.showLastTripItem());
-						if (toPassenger != null && toPassenger.numOfCurrentTripItems() > 0)
+					
+						if (toPassenger != null && toPassenger.numOfCurrentTripItems() > 0 &&
+								tripPlan.getNodeWithBoardingAndDisembarkingPassengers(request.getFromNode()) == null)
 						    drivePath.addTrip(toPassenger);
+
 						if (toDestination != null && toDestination.numOfCurrentTripItems() > 0)
 						    drivePath.addTrip(toDestination);
         			}
@@ -319,12 +329,15 @@ public class DispatchingLogicExample extends DispatchingLogic {
         		
         		LOGGER.info("	5 temp trip info : from -> " + trip.showLastTripItem()
 						+ "   to -> " + request.getToNode());
-        		toDestination = utils.planTrip(taxiVehicle.getId(), trip.showLastTripItem().tripPositionByNodeId,
+        		if(tripPlan.getNodeWithBoardingAndDisembarkingPassengers(request.getToNode()) == null)
+        		{	
+        			toDestination = utils.planTrip(taxiVehicle.getId(), trip.showLastTripItem().tripPositionByNodeId,
 						request.getToNode());
         		
-        		if (toDestination != null && toDestination.numOfCurrentTripItems() > 0)
-				    drivePath.addTrip(toDestination);		
-        		
+        			if (toDestination != null && toDestination.numOfCurrentTripItems() > 0)
+        				drivePath.addTrip(toDestination);		
+        		}
+        		tripPlan.addRequestToBoardingAndDisembarkingPassengers(request);
         		tripPlan.setTrips(drivePath);
         	}
         	

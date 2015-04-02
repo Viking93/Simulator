@@ -214,11 +214,16 @@ public class TestbedModel {
      * @param taxiId the id of the taxi in the list
      */
     public void setTaxiFree(String taxiId) {
+    	System.out.println("\n\n\n\n\n taxi is free : " + taxiId );
+    	System.out.println("\nsetting taxi free : " + taxiId );
+    	vehicleStorage.getEntityById(taxiId).setTaxiFree();
+    	
         if (this.taxisBusy.contains(taxiId)) {
             int taxiIndex = this.taxisBusy.lastIndexOf(taxiId);
             this.taxisFree.add(this.taxisBusy.remove(taxiIndex));
             this.taxiDriversFree.add(this.taxiDriversBusy.remove(taxiIndex));
         }
+        System.out.println("\n\n\n\n\n");
     }
 
     /**

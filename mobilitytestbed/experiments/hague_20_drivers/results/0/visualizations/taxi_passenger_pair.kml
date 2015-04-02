@@ -20,657 +20,2109 @@
             <Placemark id="PassengerId1">
                 <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
                 <TimeSpan>
-                    <begin>2015-04-01T16:59:00Z</begin>
-                    <end>2015-04-01T16:59:59Z</end>
+                    <begin>2015-04-02T16:59:00Z</begin>
+                    <end>2015-04-02T16:59:59Z</end>
                 </TimeSpan>
                 <styleUrl>#linestyle0</styleUrl>
                 <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3073438,52.075697</coordinates>
+                    <coordinates>4.3069342,52.0885978 4.3155,52.0854293</coordinates>
                 </LineString>
             </Placemark>
             <Placemark id="PassengerId1">
                 <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
                 <TimeSpan>
-                    <begin>2015-04-01T17:00:00Z</begin>
-                    <end>2015-04-01T17:00:59Z</end>
+                    <begin>2015-04-02T17:00:00Z</begin>
+                    <end>2015-04-02T17:00:59Z</end>
                 </TimeSpan>
                 <styleUrl>#linestyle0</styleUrl>
                 <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3038209,52.0764692</coordinates>
+                    <coordinates>4.3069342,52.0885978 4.31767,52.08333</coordinates>
                 </LineString>
             </Placemark>
             <Placemark id="PassengerId1">
                 <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
                 <TimeSpan>
-                    <begin>2015-04-01T17:01:00Z</begin>
-                    <end>2015-04-01T17:01:59Z</end>
+                    <begin>2015-04-02T17:01:00Z</begin>
+                    <end>2015-04-02T17:01:59Z</end>
                 </TimeSpan>
                 <styleUrl>#linestyle0</styleUrl>
                 <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3030665,52.0777047</coordinates>
+                    <coordinates>4.3069342,52.0885978 4.3189529,52.0822593</coordinates>
                 </LineString>
             </Placemark>
             <Placemark id="PassengerId1">
                 <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
                 <TimeSpan>
-                    <begin>2015-04-01T17:02:00Z</begin>
-                    <end>2015-04-01T17:02:59Z</end>
+                    <begin>2015-04-02T17:02:00Z</begin>
+                    <end>2015-04-02T17:02:59Z</end>
                 </TimeSpan>
                 <styleUrl>#linestyle0</styleUrl>
                 <LineString>
-                    <coordinates>4.3069342,52.0885978 4.303621,52.079981</coordinates>
+                    <coordinates>4.3069342,52.0885978 4.3179994,52.0805348</coordinates>
                 </LineString>
             </Placemark>
             <Placemark id="PassengerId1">
                 <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
                 <TimeSpan>
-                    <begin>2015-04-01T17:03:00Z</begin>
-                    <end>2015-04-01T17:03:59Z</end>
+                    <begin>2015-04-02T17:03:00Z</begin>
+                    <end>2015-04-02T17:03:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:04:00Z</begin>
+                    <end>2015-04-02T17:04:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:05:00Z</begin>
+                    <end>2015-04-02T17:05:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:06:00Z</begin>
+                    <end>2015-04-02T17:06:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:07:00Z</begin>
+                    <end>2015-04-02T17:07:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:08:00Z</begin>
+                    <end>2015-04-02T17:08:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:09:00Z</begin>
+                    <end>2015-04-02T17:09:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:10:00Z</begin>
+                    <end>2015-04-02T17:10:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:11:00Z</begin>
+                    <end>2015-04-02T17:11:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:12:00Z</begin>
+                    <end>2015-04-02T17:12:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:13:00Z</begin>
+                    <end>2015-04-02T17:13:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:14:00Z</begin>
+                    <end>2015-04-02T17:14:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:15:00Z</begin>
+                    <end>2015-04-02T17:15:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:16:00Z</begin>
+                    <end>2015-04-02T17:16:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:17:00Z</begin>
+                    <end>2015-04-02T17:17:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:18:00Z</begin>
+                    <end>2015-04-02T17:18:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:19:00Z</begin>
+                    <end>2015-04-02T17:19:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:20:00Z</begin>
+                    <end>2015-04-02T17:20:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:21:00Z</begin>
+                    <end>2015-04-02T17:21:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:22:00Z</begin>
+                    <end>2015-04-02T17:22:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:23:00Z</begin>
+                    <end>2015-04-02T17:23:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:24:00Z</begin>
+                    <end>2015-04-02T17:24:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:25:00Z</begin>
+                    <end>2015-04-02T17:25:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:26:00Z</begin>
+                    <end>2015-04-02T17:26:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:27:00Z</begin>
+                    <end>2015-04-02T17:27:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:28:00Z</begin>
+                    <end>2015-04-02T17:28:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:29:00Z</begin>
+                    <end>2015-04-02T17:29:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:30:00Z</begin>
+                    <end>2015-04-02T17:30:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:31:00Z</begin>
+                    <end>2015-04-02T17:31:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:32:00Z</begin>
+                    <end>2015-04-02T17:32:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:33:00Z</begin>
+                    <end>2015-04-02T17:33:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:34:00Z</begin>
+                    <end>2015-04-02T17:34:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:35:00Z</begin>
+                    <end>2015-04-02T17:35:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:36:00Z</begin>
+                    <end>2015-04-02T17:36:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:37:00Z</begin>
+                    <end>2015-04-02T17:37:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:38:00Z</begin>
+                    <end>2015-04-02T17:38:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:39:00Z</begin>
+                    <end>2015-04-02T17:39:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:40:00Z</begin>
+                    <end>2015-04-02T17:40:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:41:00Z</begin>
+                    <end>2015-04-02T17:41:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:42:00Z</begin>
+                    <end>2015-04-02T17:42:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:43:00Z</begin>
+                    <end>2015-04-02T17:43:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:44:00Z</begin>
+                    <end>2015-04-02T17:44:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:45:00Z</begin>
+                    <end>2015-04-02T17:45:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:46:00Z</begin>
+                    <end>2015-04-02T17:46:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:47:00Z</begin>
+                    <end>2015-04-02T17:47:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:48:00Z</begin>
+                    <end>2015-04-02T17:48:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:49:00Z</begin>
+                    <end>2015-04-02T17:49:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:50:00Z</begin>
+                    <end>2015-04-02T17:50:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:51:00Z</begin>
+                    <end>2015-04-02T17:51:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:52:00Z</begin>
+                    <end>2015-04-02T17:52:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:53:00Z</begin>
+                    <end>2015-04-02T17:53:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:54:00Z</begin>
+                    <end>2015-04-02T17:54:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:55:00Z</begin>
+                    <end>2015-04-02T17:55:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:56:00Z</begin>
+                    <end>2015-04-02T17:56:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:57:00Z</begin>
+                    <end>2015-04-02T17:57:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:58:00Z</begin>
+                    <end>2015-04-02T17:58:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:59:00Z</begin>
+                    <end>2015-04-02T17:59:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:00:00Z</begin>
+                    <end>2015-04-02T18:00:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:01:00Z</begin>
+                    <end>2015-04-02T18:01:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:02:00Z</begin>
+                    <end>2015-04-02T18:02:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:03:00Z</begin>
+                    <end>2015-04-02T18:03:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:04:00Z</begin>
+                    <end>2015-04-02T18:04:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:05:00Z</begin>
+                    <end>2015-04-02T18:05:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:06:00Z</begin>
+                    <end>2015-04-02T18:06:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:07:00Z</begin>
+                    <end>2015-04-02T18:07:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:08:00Z</begin>
+                    <end>2015-04-02T18:08:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:09:00Z</begin>
+                    <end>2015-04-02T18:09:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:10:00Z</begin>
+                    <end>2015-04-02T18:10:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:11:00Z</begin>
+                    <end>2015-04-02T18:11:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:12:00Z</begin>
+                    <end>2015-04-02T18:12:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:13:00Z</begin>
+                    <end>2015-04-02T18:13:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:14:00Z</begin>
+                    <end>2015-04-02T18:14:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:15:00Z</begin>
+                    <end>2015-04-02T18:15:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:16:00Z</begin>
+                    <end>2015-04-02T18:16:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:17:00Z</begin>
+                    <end>2015-04-02T18:17:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:18:00Z</begin>
+                    <end>2015-04-02T18:18:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:19:00Z</begin>
+                    <end>2015-04-02T18:19:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:20:00Z</begin>
+                    <end>2015-04-02T18:20:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:21:00Z</begin>
+                    <end>2015-04-02T18:21:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:22:00Z</begin>
+                    <end>2015-04-02T18:22:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:23:00Z</begin>
+                    <end>2015-04-02T18:23:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:24:00Z</begin>
+                    <end>2015-04-02T18:24:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:25:00Z</begin>
+                    <end>2015-04-02T18:25:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:26:00Z</begin>
+                    <end>2015-04-02T18:26:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:27:00Z</begin>
+                    <end>2015-04-02T18:27:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:28:00Z</begin>
+                    <end>2015-04-02T18:28:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId1">
+                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:29:00Z</begin>
+                    <end>2015-04-02T18:29:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:02:00Z</begin>
+                    <end>2015-04-02T17:02:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3179994,52.0805348</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:03:00Z</begin>
+                    <end>2015-04-02T17:03:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:04:00Z</begin>
+                    <end>2015-04-02T17:04:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:05:00Z</begin>
+                    <end>2015-04-02T17:05:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:06:00Z</begin>
+                    <end>2015-04-02T17:06:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:07:00Z</begin>
+                    <end>2015-04-02T17:07:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:08:00Z</begin>
+                    <end>2015-04-02T17:08:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:09:00Z</begin>
+                    <end>2015-04-02T17:09:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:10:00Z</begin>
+                    <end>2015-04-02T17:10:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:11:00Z</begin>
+                    <end>2015-04-02T17:11:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:12:00Z</begin>
+                    <end>2015-04-02T17:12:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:13:00Z</begin>
+                    <end>2015-04-02T17:13:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:14:00Z</begin>
+                    <end>2015-04-02T17:14:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:15:00Z</begin>
+                    <end>2015-04-02T17:15:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:16:00Z</begin>
+                    <end>2015-04-02T17:16:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:17:00Z</begin>
+                    <end>2015-04-02T17:17:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:18:00Z</begin>
+                    <end>2015-04-02T17:18:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:19:00Z</begin>
+                    <end>2015-04-02T17:19:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:20:00Z</begin>
+                    <end>2015-04-02T17:20:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:21:00Z</begin>
+                    <end>2015-04-02T17:21:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:22:00Z</begin>
+                    <end>2015-04-02T17:22:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:23:00Z</begin>
+                    <end>2015-04-02T17:23:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:24:00Z</begin>
+                    <end>2015-04-02T17:24:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:25:00Z</begin>
+                    <end>2015-04-02T17:25:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:26:00Z</begin>
+                    <end>2015-04-02T17:26:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:27:00Z</begin>
+                    <end>2015-04-02T17:27:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:28:00Z</begin>
+                    <end>2015-04-02T17:28:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:29:00Z</begin>
+                    <end>2015-04-02T17:29:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:30:00Z</begin>
+                    <end>2015-04-02T17:30:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:31:00Z</begin>
+                    <end>2015-04-02T17:31:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:32:00Z</begin>
+                    <end>2015-04-02T17:32:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:33:00Z</begin>
+                    <end>2015-04-02T17:33:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:34:00Z</begin>
+                    <end>2015-04-02T17:34:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:35:00Z</begin>
+                    <end>2015-04-02T17:35:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:36:00Z</begin>
+                    <end>2015-04-02T17:36:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:37:00Z</begin>
+                    <end>2015-04-02T17:37:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:38:00Z</begin>
+                    <end>2015-04-02T17:38:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:39:00Z</begin>
+                    <end>2015-04-02T17:39:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:40:00Z</begin>
+                    <end>2015-04-02T17:40:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:41:00Z</begin>
+                    <end>2015-04-02T17:41:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:42:00Z</begin>
+                    <end>2015-04-02T17:42:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:43:00Z</begin>
+                    <end>2015-04-02T17:43:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:44:00Z</begin>
+                    <end>2015-04-02T17:44:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:45:00Z</begin>
+                    <end>2015-04-02T17:45:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:46:00Z</begin>
+                    <end>2015-04-02T17:46:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:47:00Z</begin>
+                    <end>2015-04-02T17:47:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:48:00Z</begin>
+                    <end>2015-04-02T17:48:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:49:00Z</begin>
+                    <end>2015-04-02T17:49:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:50:00Z</begin>
+                    <end>2015-04-02T17:50:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:51:00Z</begin>
+                    <end>2015-04-02T17:51:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:52:00Z</begin>
+                    <end>2015-04-02T17:52:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:53:00Z</begin>
+                    <end>2015-04-02T17:53:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:54:00Z</begin>
+                    <end>2015-04-02T17:54:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:55:00Z</begin>
+                    <end>2015-04-02T17:55:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:56:00Z</begin>
+                    <end>2015-04-02T17:56:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:57:00Z</begin>
+                    <end>2015-04-02T17:57:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:58:00Z</begin>
+                    <end>2015-04-02T17:58:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:59:00Z</begin>
+                    <end>2015-04-02T17:59:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:00:00Z</begin>
+                    <end>2015-04-02T18:00:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:01:00Z</begin>
+                    <end>2015-04-02T18:01:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:02:00Z</begin>
+                    <end>2015-04-02T18:02:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:03:00Z</begin>
+                    <end>2015-04-02T18:03:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:04:00Z</begin>
+                    <end>2015-04-02T18:04:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:05:00Z</begin>
+                    <end>2015-04-02T18:05:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:06:00Z</begin>
+                    <end>2015-04-02T18:06:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:07:00Z</begin>
+                    <end>2015-04-02T18:07:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:08:00Z</begin>
+                    <end>2015-04-02T18:08:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:09:00Z</begin>
+                    <end>2015-04-02T18:09:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:10:00Z</begin>
+                    <end>2015-04-02T18:10:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:11:00Z</begin>
+                    <end>2015-04-02T18:11:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:12:00Z</begin>
+                    <end>2015-04-02T18:12:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:13:00Z</begin>
+                    <end>2015-04-02T18:13:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:14:00Z</begin>
+                    <end>2015-04-02T18:14:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:15:00Z</begin>
+                    <end>2015-04-02T18:15:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:16:00Z</begin>
+                    <end>2015-04-02T18:16:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:17:00Z</begin>
+                    <end>2015-04-02T18:17:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:18:00Z</begin>
+                    <end>2015-04-02T18:18:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:19:00Z</begin>
+                    <end>2015-04-02T18:19:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:20:00Z</begin>
+                    <end>2015-04-02T18:20:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:21:00Z</begin>
+                    <end>2015-04-02T18:21:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:22:00Z</begin>
+                    <end>2015-04-02T18:22:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:23:00Z</begin>
+                    <end>2015-04-02T18:23:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:24:00Z</begin>
+                    <end>2015-04-02T18:24:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:25:00Z</begin>
+                    <end>2015-04-02T18:25:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:26:00Z</begin>
+                    <end>2015-04-02T18:26:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:27:00Z</begin>
+                    <end>2015-04-02T18:27:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:28:00Z</begin>
+                    <end>2015-04-02T18:28:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId2">
+                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T18:29:00Z</begin>
+                    <end>2015-04-02T18:29:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3178212,52.0806664</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId3">
+                <description>PASSENGER: PassengerId3 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T09:07:00Z</begin>
+                    <end>2015-04-02T09:07:59Z</end>
                 </TimeSpan>
                 <styleUrl>#linestyle0</styleUrl>
                 <LineString>
                     <coordinates>4.3069342,52.0885978 4.3064805,52.0767417</coordinates>
                 </LineString>
             </Placemark>
-            <Placemark id="PassengerId1">
-                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+            <Placemark id="PassengerId3">
+                <description>PASSENGER: PassengerId3 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
                 <TimeSpan>
-                    <begin>2015-04-01T17:04:00Z</begin>
-                    <end>2015-04-01T17:04:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3030665,52.0777047</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId1">
-                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:05:00Z</begin>
-                    <end>2015-04-01T17:05:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3022526,52.0794185</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId1">
-                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:06:00Z</begin>
-                    <end>2015-04-01T17:06:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3037195,52.0803144</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId1">
-                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:07:00Z</begin>
-                    <end>2015-04-01T17:07:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3015055,52.0825751</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId1">
-                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:08:00Z</begin>
-                    <end>2015-04-01T17:08:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3042066,52.0837764</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId1">
-                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:09:00Z</begin>
-                    <end>2015-04-01T17:09:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3060588,52.0850742</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId1">
-                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:10:00Z</begin>
-                    <end>2015-04-01T17:10:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3075388,52.0870528</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId1">
-                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:11:00Z</begin>
-                    <end>2015-04-01T17:11:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3069342,52.0885978</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId1">
-                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:12:00Z</begin>
-                    <end>2015-04-01T17:12:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3105037,52.0893318 4.3105037,52.0893318</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId1">
-                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:13:00Z</begin>
-                    <end>2015-04-01T17:13:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3119105,52.089773 4.3119105,52.089773</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId1">
-                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:14:00Z</begin>
-                    <end>2015-04-01T17:14:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.313998,52.0872253 4.313998,52.0872253</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId1">
-                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:15:00Z</begin>
-                    <end>2015-04-01T17:15:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3155,52.0854293 4.3155,52.0854293</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId1">
-                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:16:00Z</begin>
-                    <end>2015-04-01T17:16:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3177536,52.0831593 4.3177536,52.0831593</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId1">
-                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:17:00Z</begin>
-                    <end>2015-04-01T17:17:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3202077,52.0812333 4.3202077,52.0812333</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId1">
-                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:18:00Z</begin>
-                    <end>2015-04-01T17:18:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3174,52.081 4.3174,52.081</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId1">
-                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:19:00Z</begin>
-                    <end>2015-04-01T17:19:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3189529,52.0822593 4.3189529,52.0822593</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId1">
-                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:20:00Z</begin>
-                    <end>2015-04-01T17:20:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3215093,52.0801938 4.3215093,52.0801938</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId1">
-                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:21:00Z</begin>
-                    <end>2015-04-01T17:21:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3237347,52.0787105 4.3237347,52.0787105</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId1">
-                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:22:00Z</begin>
-                    <end>2015-04-01T17:22:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.326878,52.0779811 4.326878,52.0779811</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId1">
-                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:23:00Z</begin>
-                    <end>2015-04-01T17:23:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3289537,52.076319 4.3289537,52.076319</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId1">
-                <description>PASSENGER: PassengerId1 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:24:00Z</begin>
-                    <end>2015-04-01T17:24:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3300327,52.0742531 4.3300327,52.0742531</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId2">
-                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:02:00Z</begin>
-                    <end>2015-04-01T17:02:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.303621,52.079981</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId2">
-                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:03:00Z</begin>
-                    <end>2015-04-01T17:03:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3064805,52.0767417</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId2">
-                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:04:00Z</begin>
-                    <end>2015-04-01T17:04:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3030665,52.0777047</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId2">
-                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:05:00Z</begin>
-                    <end>2015-04-01T17:05:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3022526,52.0794185</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId2">
-                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:06:00Z</begin>
-                    <end>2015-04-01T17:06:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3037195,52.0803144</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId2">
-                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:07:00Z</begin>
-                    <end>2015-04-01T17:07:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3015055,52.0825751</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId2">
-                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:08:00Z</begin>
-                    <end>2015-04-01T17:08:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3042066,52.0837764</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId2">
-                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:09:00Z</begin>
-                    <end>2015-04-01T17:09:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3060588,52.0850742</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId2">
-                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:10:00Z</begin>
-                    <end>2015-04-01T17:10:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3075388,52.0870528</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId2">
-                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:11:00Z</begin>
-                    <end>2015-04-01T17:11:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3069342,52.0885978</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId2">
-                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:12:00Z</begin>
-                    <end>2015-04-01T17:12:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3105037,52.0893318 4.3105037,52.0893318</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId2">
-                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:13:00Z</begin>
-                    <end>2015-04-01T17:13:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3119105,52.089773 4.3119105,52.089773</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId2">
-                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:14:00Z</begin>
-                    <end>2015-04-01T17:14:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.313998,52.0872253 4.313998,52.0872253</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId2">
-                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:15:00Z</begin>
-                    <end>2015-04-01T17:15:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3155,52.0854293 4.3155,52.0854293</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId2">
-                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:16:00Z</begin>
-                    <end>2015-04-01T17:16:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3177536,52.0831593 4.3177536,52.0831593</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId2">
-                <description>PASSENGER: PassengerId2 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:17:00Z</begin>
-                    <end>2015-04-01T17:17:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3202077,52.0812333 4.3202077,52.0812333</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId0">
-                <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T16:56:00Z</begin>
-                    <end>2015-04-01T16:56:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3064805,52.0767417</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId0">
-                <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T16:57:00Z</begin>
-                    <end>2015-04-01T16:57:59Z</end>
+                    <begin>2015-04-02T09:08:00Z</begin>
+                    <end>2015-04-02T09:08:59Z</end>
                 </TimeSpan>
                 <styleUrl>#linestyle0</styleUrl>
                 <LineString>
                     <coordinates>4.3069342,52.0885978 4.3033896,52.0772229</coordinates>
                 </LineString>
             </Placemark>
-            <Placemark id="PassengerId0">
-                <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+            <Placemark id="PassengerId3">
+                <description>PASSENGER: PassengerId3 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
                 <TimeSpan>
-                    <begin>2015-04-01T16:58:00Z</begin>
-                    <end>2015-04-01T16:58:59Z</end>
+                    <begin>2015-04-02T09:09:00Z</begin>
+                    <end>2015-04-02T09:09:59Z</end>
                 </TimeSpan>
                 <styleUrl>#linestyle0</styleUrl>
                 <LineString>
                     <coordinates>4.3069342,52.0885978 4.3015742,52.0791276</coordinates>
                 </LineString>
             </Placemark>
-            <Placemark id="PassengerId0">
-                <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+            <Placemark id="PassengerId3">
+                <description>PASSENGER: PassengerId3 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
                 <TimeSpan>
-                    <begin>2015-04-01T16:59:00Z</begin>
-                    <end>2015-04-01T16:59:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3073438,52.075697</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId0">
-                <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:00:00Z</begin>
-                    <end>2015-04-01T17:00:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3038209,52.0764692</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId0">
-                <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:01:00Z</begin>
-                    <end>2015-04-01T17:01:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3030665,52.0777047</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId0">
-                <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:02:00Z</begin>
-                    <end>2015-04-01T17:02:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.303621,52.079981</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId0">
-                <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:03:00Z</begin>
-                    <end>2015-04-01T17:03:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3064805,52.0767417</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId0">
-                <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:04:00Z</begin>
-                    <end>2015-04-01T17:04:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3030665,52.0777047</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId0">
-                <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:05:00Z</begin>
-                    <end>2015-04-01T17:05:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3022526,52.0794185</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId0">
-                <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:06:00Z</begin>
-                    <end>2015-04-01T17:06:59Z</end>
+                    <begin>2015-04-02T09:10:00Z</begin>
+                    <end>2015-04-02T09:10:59Z</end>
                 </TimeSpan>
                 <styleUrl>#linestyle0</styleUrl>
                 <LineString>
                     <coordinates>4.3069342,52.0885978 4.3037195,52.0803144</coordinates>
                 </LineString>
             </Placemark>
-            <Placemark id="PassengerId0">
-                <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+            <Placemark id="PassengerId3">
+                <description>PASSENGER: PassengerId3 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
                 <TimeSpan>
-                    <begin>2015-04-01T17:07:00Z</begin>
-                    <end>2015-04-01T17:07:59Z</end>
+                    <begin>2015-04-02T09:11:00Z</begin>
+                    <end>2015-04-02T09:11:59Z</end>
                 </TimeSpan>
                 <styleUrl>#linestyle0</styleUrl>
                 <LineString>
                     <coordinates>4.3069342,52.0885978 4.3015055,52.0825751</coordinates>
                 </LineString>
             </Placemark>
-            <Placemark id="PassengerId0">
-                <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+            <Placemark id="PassengerId3">
+                <description>PASSENGER: PassengerId3 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
                 <TimeSpan>
-                    <begin>2015-04-01T17:08:00Z</begin>
-                    <end>2015-04-01T17:08:59Z</end>
+                    <begin>2015-04-02T09:12:00Z</begin>
+                    <end>2015-04-02T09:12:59Z</end>
                 </TimeSpan>
                 <styleUrl>#linestyle0</styleUrl>
                 <LineString>
                     <coordinates>4.3069342,52.0885978 4.3042066,52.0837764</coordinates>
                 </LineString>
             </Placemark>
-            <Placemark id="PassengerId0">
-                <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+            <Placemark id="PassengerId3">
+                <description>PASSENGER: PassengerId3 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
                 <TimeSpan>
-                    <begin>2015-04-01T17:09:00Z</begin>
-                    <end>2015-04-01T17:09:59Z</end>
+                    <begin>2015-04-02T09:13:00Z</begin>
+                    <end>2015-04-02T09:13:59Z</end>
                 </TimeSpan>
                 <styleUrl>#linestyle0</styleUrl>
                 <LineString>
                     <coordinates>4.3069342,52.0885978 4.3060588,52.0850742</coordinates>
                 </LineString>
             </Placemark>
-            <Placemark id="PassengerId0">
-                <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+            <Placemark id="PassengerId3">
+                <description>PASSENGER: PassengerId3 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
                 <TimeSpan>
-                    <begin>2015-04-01T17:10:00Z</begin>
-                    <end>2015-04-01T17:10:59Z</end>
+                    <begin>2015-04-02T09:14:00Z</begin>
+                    <end>2015-04-02T09:14:59Z</end>
                 </TimeSpan>
                 <styleUrl>#linestyle0</styleUrl>
                 <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3075388,52.0870528</coordinates>
+                    <coordinates>4.3069342,52.0885978 4.306238,52.086622</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId3">
+                <description>PASSENGER: PassengerId3 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T09:15:00Z</begin>
+                    <end>2015-04-02T09:15:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3069342,52.0885978 4.3065584,52.0885633</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId3">
+                <description>PASSENGER: PassengerId3 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T09:16:00Z</begin>
+                    <end>2015-04-02T09:16:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3063701,52.0887028 4.3063701,52.0887028</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId3">
+                <description>PASSENGER: PassengerId3 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T09:17:00Z</begin>
+                    <end>2015-04-02T09:17:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3041248,52.0880674 4.3041248,52.0880674</coordinates>
                 </LineString>
             </Placemark>
             <Placemark id="PassengerId0">
                 <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
                 <TimeSpan>
-                    <begin>2015-04-01T17:11:00Z</begin>
-                    <end>2015-04-01T17:11:59Z</end>
+                    <begin>2015-04-02T16:56:00Z</begin>
+                    <end>2015-04-02T16:56:59Z</end>
                 </TimeSpan>
                 <styleUrl>#linestyle0</styleUrl>
                 <LineString>
-                    <coordinates>4.3069342,52.0885978 4.3069342,52.0885978</coordinates>
+                    <coordinates>4.3093314,52.0889847 4.3093314,52.0889847</coordinates>
                 </LineString>
             </Placemark>
             <Placemark id="PassengerId0">
                 <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
                 <TimeSpan>
-                    <begin>2015-04-01T17:12:00Z</begin>
-                    <end>2015-04-01T17:12:59Z</end>
-                </TimeSpan>
-                <styleUrl>#linestyle0</styleUrl>
-                <LineString>
-                    <coordinates>4.3105037,52.0893318 4.3105037,52.0893318</coordinates>
-                </LineString>
-            </Placemark>
-            <Placemark id="PassengerId0">
-                <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
-                <TimeSpan>
-                    <begin>2015-04-01T17:13:00Z</begin>
-                    <end>2015-04-01T17:13:59Z</end>
+                    <begin>2015-04-02T16:57:00Z</begin>
+                    <end>2015-04-02T16:57:59Z</end>
                 </TimeSpan>
                 <styleUrl>#linestyle0</styleUrl>
                 <LineString>
@@ -680,8 +2132,8 @@
             <Placemark id="PassengerId0">
                 <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
                 <TimeSpan>
-                    <begin>2015-04-01T17:14:00Z</begin>
-                    <end>2015-04-01T17:14:59Z</end>
+                    <begin>2015-04-02T16:58:00Z</begin>
+                    <end>2015-04-02T16:58:59Z</end>
                 </TimeSpan>
                 <styleUrl>#linestyle0</styleUrl>
                 <LineString>
@@ -691,8 +2143,8 @@
             <Placemark id="PassengerId0">
                 <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
                 <TimeSpan>
-                    <begin>2015-04-01T17:15:00Z</begin>
-                    <end>2015-04-01T17:15:59Z</end>
+                    <begin>2015-04-02T16:59:00Z</begin>
+                    <end>2015-04-02T16:59:59Z</end>
                 </TimeSpan>
                 <styleUrl>#linestyle0</styleUrl>
                 <LineString>
@@ -702,23 +2154,34 @@
             <Placemark id="PassengerId0">
                 <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
                 <TimeSpan>
-                    <begin>2015-04-01T17:16:00Z</begin>
-                    <end>2015-04-01T17:16:59Z</end>
+                    <begin>2015-04-02T17:00:00Z</begin>
+                    <end>2015-04-02T17:00:59Z</end>
                 </TimeSpan>
                 <styleUrl>#linestyle0</styleUrl>
                 <LineString>
-                    <coordinates>4.3177536,52.0831593 4.3177536,52.0831593</coordinates>
+                    <coordinates>4.31767,52.08333 4.31767,52.08333</coordinates>
                 </LineString>
             </Placemark>
             <Placemark id="PassengerId0">
                 <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
                 <TimeSpan>
-                    <begin>2015-04-01T17:17:00Z</begin>
-                    <end>2015-04-01T17:17:59Z</end>
+                    <begin>2015-04-02T17:01:00Z</begin>
+                    <end>2015-04-02T17:01:59Z</end>
                 </TimeSpan>
                 <styleUrl>#linestyle0</styleUrl>
                 <LineString>
-                    <coordinates>4.3202077,52.0812333 4.3202077,52.0812333</coordinates>
+                    <coordinates>4.3189529,52.0822593 4.3189529,52.0822593</coordinates>
+                </LineString>
+            </Placemark>
+            <Placemark id="PassengerId0">
+                <description>PASSENGER: PassengerId0 &lt;br/&gt;TAXI_DRIVER: DriverId0 &lt;br/&gt;</description>
+                <TimeSpan>
+                    <begin>2015-04-02T17:02:00Z</begin>
+                    <end>2015-04-02T17:02:59Z</end>
+                </TimeSpan>
+                <styleUrl>#linestyle0</styleUrl>
+                <LineString>
+                    <coordinates>4.3179994,52.0805348 4.3179994,52.0805348</coordinates>
                 </LineString>
             </Placemark>
         </Folder>

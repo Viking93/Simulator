@@ -38,4 +38,10 @@ public class TestbedVehicle extends Vehicle {
 	{
 		this.vehicleTripPlan = vehicleTripPlan;
 	}
+	
+	public void setTaxiFree()
+	{
+		this.vehicleTripPlan = null;
+		System.out.println("\n New Trip plan : " + vehicleTripPlan);
+	}
 }
