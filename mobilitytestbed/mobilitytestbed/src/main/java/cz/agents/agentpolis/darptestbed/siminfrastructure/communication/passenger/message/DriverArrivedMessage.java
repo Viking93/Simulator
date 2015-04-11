@@ -17,7 +17,6 @@ public class DriverArrivedMessage implements MessageVisitor<PassengerReceiverVis
 
 	@Override
 	public void accept(PassengerReceiverVisitor receiverVisitor) {
-		System.out.println("===::## DriverArrivedMessage " + receiverVisitor.toString());
 		receiverVisitor.visit(this);
 	}
 

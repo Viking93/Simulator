@@ -20,7 +20,6 @@ public final class Request implements MessageVisitor<RequestConsumerReceiverVisi
     private final long toNode;
     private final TimeWindow timeWindow;
     private final Set<String> additionalRequirements;
-    private  long pickupTime;
 
     // this class can be extended by adding max price, max group size etc.
 
@@ -33,7 +32,6 @@ public final class Request implements MessageVisitor<RequestConsumerReceiverVisi
         super();
         this.passengerId = passengerId;
         this.callTimeInDayRange = -1;
-        this.pickupTime = -1;
         this.fromNode = fromNode;
         this.toNode = toNode;
         this.timeWindow = timeWindow;
@@ -50,23 +48,16 @@ public final class Request implements MessageVisitor<RequestConsumerReceiverVisi
         this.toNode = toNode;
         this.timeWindow = timeWindow;
         this.additionalRequirements = checkNotNull(additionalRequirements);
-        this.pickupTime = -1;
     }
 
     public String getPassengerId() {
         return passengerId;
     }
 
-    public void addPickupTime(long time) {
-    	this.pickupTime  = time;
-    }
     public long getFromNode() {
         return fromNode;
     }
 
-    public long getPickupTime() {
-    	return pickupTime;
-    }
     public long getToNode() {
         return toNode;
     }

@@ -146,14 +146,12 @@ public class TripPlan {
     @Override
     public String toString() {
         return TripPlan.class.getSimpleName() + " Passengers: " +
-                mapOfBoardingAndDisembarkingPassengers + " *** " + this.getTrips().numTrips() + " Trips: " + trips;
+                mapOfBoardingAndDisembarkingPassengers + " " + this.getTrips().numTrips() + " Trips: " + trips;
     }
 
-    
     public boolean removeRequestFromBoardingAndDisembarkingPassengers(Request request) {
-    	
-    	LOGGER.info("Removing from trip plan : " + request.getPassengerId());
-    	
+
+
         boolean success = true;
         try {
             PassengersInAndOutPair passengersAtNode =
@@ -186,10 +184,6 @@ public class TripPlan {
     }
 
     public boolean removePassengerFromBoardingPassengersAtNode(String passengerId, long node) {
-    	LOGGER.info("Removing passenger from BoardingPassengersAtNode : " + passengerId
-    			+ "\n   map : " + getMapOfBoardingAndDisembarkingPassengers()
-    			+ "\n	at node : " + node);
-    	
         PassengersInAndOutPair passengersAtNode =
                 getMapOfBoardingAndDisembarkingPassengers().get(node);
 
@@ -225,8 +219,6 @@ public class TripPlan {
     }
 
     public void addRequestToBoardingAndDisembarkingPassengers(Request request) {
-    	LOGGER.info("Adding to trip plan : " + request.getPassengerId());
-    	
         PassengersInAndOutPair passengersAtNode =
                 getMapOfBoardingAndDisembarkingPassengers().get(request.getFromNode());
         if (passengersAtNode == null) {

@@ -2,6 +2,7 @@ package cz.agents.agentpolis.darptestbed.global;
 
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
+
 import cz.agents.agentpolis.darptestbed.global.data.DriverAndDistance;
 import cz.agents.agentpolis.darptestbed.global.data.DriverAndDistanceComparator;
 import cz.agents.agentpolis.darptestbed.siminfrastructure.logger.UtilsLogger;
@@ -21,6 +22,7 @@ import cz.agents.agentpolis.simmodel.environment.model.citymodel.transportnetwor
 import cz.agents.agentpolis.simmodel.environment.model.citymodel.transportnetwork.elemets.Node;
 import cz.agents.agentpolis.simmodel.environment.model.query.AgentPositionQuery;
 import cz.agents.alite.common.event.EventProcessor;
+
 import org.apache.log4j.Logger;
 
 import java.util.*;
@@ -364,29 +366,41 @@ public class Utils {
         String tmpPassen = null;
         PassengersInAndOutPair tmpSet;
 
+        //LOGGER.info("==========> making tripplan");
+        //show(flexiblePlan);
+        
         // make the map of boarding passengers
         for (int i = 0; i < flexiblePlan.getSize(); i++) {
-            tmpSet = mapOfBoardingAndLeavingPassengers.get(i);
-
+            //tmpSet = mapOfBoardingAndLeavingPassengers.get(i);
+            tmpSet = mapOfBoardingAndLeavingPassengers.get(flexiblePlan.getNode(i));
+            
             tmpPassen = flexiblePlan.getBoardingPassenger(i);
+            //LOGGER.info("index : " + i + "\t pass : " + tmpPassen + "\n\t\t tmpset : " + tmpSet);
             if (tmpPassen != null) {
                 if (tmpSet == null)
                     tmpSet = new PassengersInAndOutPair();
 
                 tmpSet.getIn().add(tmpPassen);
                 mapOfBoardingAndLeavingPassengers.put(flexiblePlan.getNode(i), tmpSet);
+                
             }
 
             tmpPassen = flexiblePlan.getLeavingPassenger(i);
+            //LOGGER.info("index : " + i + "\t pass : " + tmpPassen);
             if (tmpPassen != null) {
                 if (tmpSet == null)
                     tmpSet = new PassengersInAndOutPair();
 
-                mapOfBoardingAndLeavingPassengers.put(flexiblePlan.getNode(i), tmpSet);
                 tmpSet.getOff().add(tmpPassen);
+                mapOfBoardingAndLeavingPassengers.put(flexiblePlan.getNode(i), tmpSet);
+                //tmpSet.getOff().add(tmpPassen);
             }
+            
+            //LOGGER.info("========> map : " + mapOfBoardingAndLeavingPassengers.toString());
         }
-
+        
+        
+        
         return new TripPlan(trips, mapOfBoardingAndLeavingPassengers, flexiblePlan);
     }
 
@@ -396,6 +410,9 @@ public class Utils {
      * @return trips
      */
     public Trips makeTrips(FlexiblePlan flexiblePlan) {
+    	// List to maintain unique nodes in trip
+    	List<Long> visitedNodes = new ArrayList<Long>();
+    	
         if (flexiblePlan.getSize() == 0) {
             return null;
         }
@@ -407,15 +424,30 @@ public class Utils {
             if (flexiblePlan.firstNode >= 0) {
                 trips = pathPlanner
                         .findTrip(vehicleId, flexiblePlan.firstNode, flexiblePlan.planItems.get(0).getNode());
+                visitedNodes.add(flexiblePlan.firstNode);
+                visitedNodes.add(flexiblePlan.planItems.get(0).getNode());
             }
             // all the other nodes
-            for (int i = 1; i < flexiblePlan.getSize(); i++) {
+            /*for (int i = 1; i < flexiblePlan.getSize(); i++) {
                 tmpTrips = pathPlanner.findTrip(vehicleId, flexiblePlan.planItems.get(i - 1).getNode(),
                         flexiblePlan.planItems.get(i).getNode());
                 trips.addEndCurrentTrips(tmpTrips.getAndRemoveFirstTrip());
+            }*/
+            for (int i = 0; i < flexiblePlan.getSize() - 1; i++) {
+            	for(int j = i; j < flexiblePlan.getSize(); j++){
+            		if(visitedNodes.contains(flexiblePlan.getNode(j)))
+            			continue;
+	                tmpTrips = pathPlanner.findTrip(vehicleId, flexiblePlan.planItems.get(i).getNode(),
+	                        flexiblePlan.planItems.get(j).getNode());
+	                trips.addEndCurrentTrips(tmpTrips.getAndRemoveFirstTrip());
+	                visitedNodes.add(flexiblePlan.planItems.get(j).getNode());
+	                i = j - 1;
+	                break;
+            	}
             }
             // last node
-            if (flexiblePlan.lastNode >= 0) {
+            if (flexiblePlan.lastNode >= 0 && !visitedNodes.contains(flexiblePlan.lastNode)) {
+            	
                 tmpTrips = pathPlanner.findTrip(vehicleId, flexiblePlan.planItems.get(flexiblePlan.getSize() - 1)
                         .getNode(), flexiblePlan.lastNode);
                 trips.addEndCurrentTrips(tmpTrips.getAndRemoveFirstTrip());
@@ -560,7 +592,11 @@ public class Utils {
     public FlexiblePlan planTrips(List<Request> listOfReqs, TestbedVehicle vehicle,
                                   Set<Request> requestsInExecution, FlexiblePlan plan,
                                   boolean refreshCurrTime) {
-
+    	
+    	//LOGGER.info("	vehicle : " + vehicle.getId());
+    	//LOGGER.info("	listOfReqs : " + getPassengerIdsFromRequests(listOfReqs));
+    	//LOGGER.info("	ReqsInExec : " + getPassengerIdsFromRequests(requestsInExecution));
+    	
         listOfReqs = new ArrayList<Request>(listOfReqs);
         String taxiDriverId = taxiModel.getTaxiDriverId(vehicle.getId());
 
@@ -590,7 +626,8 @@ public class Utils {
             long timeToDrive = computeDrivingTime(taxiDriverId, req.getPassengerId());
             if (req.getTimeWindow() != null
                     && getCurrentTime() + timeToDrive > req.getTimeWindow().getLatestDeparture()) {
-
+            	
+            	//LOGGER.info("	Reqquests can't be met");
                 return null;
 //                listOfReqs.remove(i);
             }
@@ -612,9 +649,10 @@ public class Utils {
         for (Request request : listOfReqs) {
             minDepartTime = Long.MAX_VALUE;
             if (!requestsInExecution.contains(request)) {
-
+            	
                 itemGetIn = new PlanItem(request, true);
                 itemGetOff = new PlanItem(request, false);
+                //LOGGER.info("	1 itemGetIn : " + itemGetIn.getPassengerId() + "\nitemgetoff : " + itemGetOff.getPassengerId());
                 // first, lets place the node where the passenger gets in
                 for (int j = 0; j <= plan.getSize(); j++) {
                     tmpDepartTime = insertItem(j, itemGetIn, true, plan);
@@ -639,12 +677,15 @@ public class Utils {
                 // best
                 if (minDepartTime < Long.MAX_VALUE) {
 
+                	//LOGGER.info("====================> itemGetIn : " + itemGetIn.getPassengerId());
                     insertItem(minDTimeGetInIndex, itemGetIn, true, plan);
+                    //LOGGER.info("====================> itemGetOff : " + itemGetOff.getPassengerId());
                     insertItem(minDTimeGetOffIndex, itemGetOff, true, plan);
                     // let's not forget checking the capacity
                     if (!checkOutCapacity(plan)) {
                         plan.removeItem(minDTimeGetOffIndex);
                         plan.removeItem(minDTimeGetInIndex);
+                        //LOGGER.info("	1 Removed items : " + itemGetIn.getPassengerId() + "  and : " + itemGetOff.getPassengerId());
                     } else {
                         listOfReqsInPlan.add(request);
                     }
@@ -672,16 +713,21 @@ public class Utils {
                 // best
                 if (minDepartTime < Long.MAX_VALUE) {
                     insertItem(minDTimeGetOffIndex, itemGetOff, true, plan);
+                    //LOGGER.info("	2 Inserted items : " + itemGetOff.getPassengerId() + "\nafter plan : " + makeTripPlan(plan));
                     // let's not forget checking the capacity
                     if (!checkOutCapacity(plan)) {
                         plan.removeItem(minDTimeGetOffIndex);
+                        //LOGGER.info("	2 Removed items : " + itemGetOff.getPassengerId());
                     } else {
                         listOfReqsInPlan.add(request);
                     }
                 }
             }
         }
-
+        
+        //LOGGER.info("	Before leaving");
+        //show(plan);
+        
         return plan;
     }
 
@@ -806,12 +852,41 @@ public class Utils {
         }
 
         if (really) {
+        	//LOGGER.info("before");
+        	//show(flexiblePlan);
             flexiblePlan.planItems.add(index, item);
+            //LOGGER.info("after");
+            //show(flexiblePlan);
         }
 
         return retVal;
     }
 
+    /***
+     * Basnal :P
+     */
+    public void show(FlexiblePlan plan)
+    {
+    	if(plan == null)
+    	{
+    		//LOGGER.info("	Plan is NULL");
+    		//return;
+    	}
+    	
+    	if(plan.planItems == null)
+    	{
+    		//LOGGER.info("	Plan Does not have any items");
+    		//return;
+    	}
+    	for(int i = 0; i < plan.planItems.size(); i++)
+    	{
+    		LOGGER.info("	index : " + i + "	" + plan.getNode(i) + "  in : " + plan.getBoardingPassenger(i)
+    				+ "   out : " + plan.getLeavingPassenger(i));
+    	}
+    }
+    
+    
+    
     /**
      * @return true, if the first PlanItem has to stay first (we mustn't insert
      *         anything into the front of it)
@@ -838,13 +913,18 @@ public class Utils {
         }
         // the driver's seat is taken
         int capacityLeft = flexiblePlan.vehicle.getCapacity() - 1 - currentOnBoard;
+        //LOGGER.info("	capacityLeft : " + capacityLeft + "   of * " + flexiblePlan.vehicle.getId());
         for (int i = 0; i < flexiblePlan.getSize(); i++) {
             if (flexiblePlan.getPlanItems().get(i).isBoarding) {
+            	//LOGGER.info("	boarding at : " + flexiblePlan.getPlanItems().get(i).getNode());
                 capacityLeft--;
             } else {
+            	//LOGGER.info("	leaving at  : " + flexiblePlan.getPlanItems().get(i).getNode());
                 capacityLeft++;
             }
             if (capacityLeft < 0) {
+            	//LOGGER.info("	capacity exceeded at : " + flexiblePlan.getPlanItems().get(i).getNode()
+            		//	+ "		Passen at node   : " + flexiblePlan.getPlanItems().get(i).isBoarding);
                 return false;
             }
         }
@@ -916,17 +996,44 @@ public class Utils {
      */
     public Trip planTrip(String vehicleId, Long originNodeId, Long destinationNodeId) {
         try {
-        	Trips trips = pathPlanner.findTrip(vehicleId, originNodeId, destinationNodeId);
-        	if(trips == null)
-        		return null;
-        	
-            return trips.getAndRemoveFirstTrip();
+            return pathPlanner.findTrip(vehicleId, originNodeId, destinationNodeId).getAndRemoveFirstTrip();
         } catch (TripPlannerException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
             return null;
         }
     }
-
-
+    
+    /**
+     * Get PassengerId list from list of requests
+     * @author Basnal
+     */
+    public List<String> getPassengerIdsFromRequests(List<Request> listOfReq)
+    {
+    	List<String> passenIds = new ArrayList<String>();
+    	
+    	if(listOfReq == null)
+    		return null;
+    	
+    	for(Request req : listOfReq)
+    	{
+    		passenIds.add(req.getPassengerId());
+    	}
+    	
+    	return passenIds;
+    }
+    public List<String> getPassengerIdsFromRequests(Set<Request> listOfReq)
+    {
+    	List<String> passenIds = new ArrayList<String>();
+    	
+    	if(listOfReq == null)
+    		return null;
+    	
+    	for(Request req : listOfReq)
+    	{
+    		passenIds.add(req.getPassengerId());
+    	}
+    	
+    	return passenIds;
+    }
 }

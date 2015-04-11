@@ -89,14 +89,14 @@ public class DriverCentralizedLogic extends DriverLogicWithPassengerMessageProto
     }
 
     private boolean isTripPlanAcceptable(TripPlan tripPlan) {
+    	LOGGER.debug("	passengers on board : " + getPassengersOnBoard() + 
+    			"\npassen trip on board : " + tripPlan.getPassengersOnBoard());
         return driverState == DriverState.ACCEPTING_NEW_PLANS &&
                 Sets.symmetricDifference(getPassengersOnBoard(), tripPlan.getPassengersOnBoard()).isEmpty();
     }
 
     protected void driveNextPartOfTripPlan() {
-    	
-    	LOGGER.info("drive next part of trip plan : " + driverState);
-    	
+
         switch (driverState) {
             case ACCEPTING_NEW_PLANS:
 
@@ -148,17 +148,12 @@ public class DriverCentralizedLogic extends DriverLogicWithPassengerMessageProto
 
     @Override
     protected void sendTaxiArrivedToPickup(String passengerId) {
-    	//String a = null;
-    	//a.charAt(8);
-    	
         LOGGER.debug("Sending pickup: " + passengerId);
-        LOGGER.info("Sending pickup: " + passengerId);
         sender.sendMessage(passengerId,
                 new DriverArrivedMessage(getAgentId(), new TripInfo(getAgentId(), this.getVehicle().getId())));
         dispatchingMessageProtocol.driverDispatchingProtocol.sendMessage(taxiModel.getDispatching().getId(),
                 new DriverReportsPassengerIsInMessage(passengerId,
                 new TripInfo(this.getAgentId(), this.getVehicle().getId())));
-        LOGGER.info("Sent pickup: " + passengerId);
     }
 
     @Override

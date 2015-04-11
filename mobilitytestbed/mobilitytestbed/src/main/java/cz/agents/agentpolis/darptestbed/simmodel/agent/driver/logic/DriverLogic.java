@@ -15,12 +15,10 @@ import cz.agents.agentpolis.simmodel.agent.activity.movement.DriveVehicleActivit
 import cz.agents.agentpolis.simmodel.agent.activity.movement.callback.DrivingFinishedActivityCallback;
 import cz.agents.agentpolis.simmodel.environment.model.citymodel.transportnetwork.AllNetworkNodes;
 import cz.agents.agentpolis.simmodel.environment.model.query.AgentPositionQuery;
-
 import org.apache.log4j.Logger;
 
 import java.util.HashSet;
 import java.util.Set;
-import java.util.TreeSet;
 
 /**
  * This class contains all methods, that are common for both centralized and
@@ -228,7 +226,6 @@ public abstract class DriverLogic<TMessageProtocol extends AMessageProtocol<? ex
      */
     @Override
     public void finishedDriving() {
-    	LOGGER.info("====!!! finished driving -> goto next part" + vehicle.getVehicleTrip()); 
         driveNextPartOfTripPlan();
     }
 
@@ -307,9 +304,7 @@ public abstract class DriverLogic<TMessageProtocol extends AMessageProtocol<? ex
     }
 
     private boolean processDisembarkingPassengers(Long currentPos, PassengersInAndOutPair passengersToGetInAndOut) {
-        Set<String> passengersToGetOut = new TreeSet<String>();
-        passengersToGetOut.addAll(passengersToGetInAndOut.getOff());
-        
+        Set<String> passengersToGetOut = new HashSet<String>(passengersToGetInAndOut.getOff());
         this.numOfPassenToGetOff = passengersToGetOut.size();
         LOGGER.debug("Processing off - driver: " + getVehicle().getId() + " " + tripPlan + " " +
                 this.numOfPassenToGetOff);
@@ -341,23 +336,16 @@ public abstract class DriverLogic<TMessageProtocol extends AMessageProtocol<? ex
     }
 
     private void processBoardingPassengers(Long currentPos, PassengersInAndOutPair passengersToGetInAndOut) {
-        Set<String> passengersToGetIn = new TreeSet<String>(); 
-        passengersToGetIn.addAll(passengersToGetInAndOut.getIn());
-        
+        Set<String> passengersToGetIn = new HashSet<String>(passengersToGetInAndOut.getIn());
         this.numOfPassenToGetIn = passengersToGetIn.size();
         LOGGER.debug("Processing in - driver: " + getVehicle().getId() + " " + this.numOfPassenToGetIn);
-        LOGGER.info("Processing in - driver: " + getVehicle().getId() + " " + passengersToGetIn);
         for (String passengerId : passengersToGetIn) {
-            LOGGER.debug("Driver: PICKUP of " + passengerId + ", used " + getVehicle().getId() +
-                    ", driven by " + getAgentId() + " at " + currentPos + " - " +
-                passengersToGetIn.toString());
-            
-            LOGGER.info("Driver: PICKUP of " + passengerId + ", used " + getVehicle().getId() +
-                    ", driven by " + getAgentId() + " at " + currentPos + " - " +
-                passengersToGetIn.toString());
-            
+            //LOGGER.debug("Driver: PICKUP of " + passengerId + ", used " + getVehicle().getId() +
+              //      ", driven by " + getAgentId() + " at " + currentPos + " - " +
+                //passengersToGetIn.toString());
+        	LOGGER.debug("	Passengers to get in : " + passengersToGetIn);
+
             tripPlan.removePassengerFromBoardingPassengersAtNode(passengerId, currentPos);
-            LOGGER.info("	to the next passenger now : " + passengersToGetIn);
             sendTaxiArrivedToPickup(passengerId);
 //
 //                        LOGGER.debug("After PICKUP: " + passengersToGetIn.toString() + " " + tripPlan + " " +
@@ -365,8 +353,6 @@ public abstract class DriverLogic<TMessageProtocol extends AMessageProtocol<? ex
 
             informedBoardingPassengersAtCurrentNode.add(passengerId);
             passengersOnBoard.add(passengerId);
-            
-            
         }
     }
 
